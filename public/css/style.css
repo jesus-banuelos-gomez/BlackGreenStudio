@@ -35,16 +35,18 @@ a {
 
 /* 🎨 Estilos Globales */
 .container {
-  
   width: 90%;
-  max-width: 900px;
+  height: min-content;
+  max-width: 1100px;
   margin: 0 auto;
-
+  padding: 0%;
 }
+
+
 
 .btn {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 5px 24px;
   border-radius: 4px;
   font-weight: 600;
   font-family: var(--font-title);
@@ -124,7 +126,7 @@ h2::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .nav-links {
@@ -134,9 +136,11 @@ h2::after {
 }
 
 .nav-links a {
+  color: #000000;
   font-weight: 600;
   transition: color 0.3s;
   position: relative;
+  
 }
 
 .nav-links a:hover {
@@ -254,8 +258,17 @@ h2::after {
 
 /* 📱 Responsive Design */
 @media (max-width: 768px) {
+  .img-logo{
+    margin-top: 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
+    padding: 10px 10px;
   }
   
   .nav-links {
@@ -264,6 +277,11 @@ h2::after {
     justify-content: center;
   }
   
+  .nav-links a {
+    color: white;
+  }
+
+
   .hero-content {
     text-align: center;
   }

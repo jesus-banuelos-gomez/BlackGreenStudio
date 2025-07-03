@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Soluciones tecnológicas personalizadas: Desarrollo de software, aplicaciones móviles y consultoría en innovación digital">
     <title>BlackGreenStudio | Transformación Digital a Medida</title>
+
+    <!--Links style-->
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contacto.css">
     
-    <link rel="stylesheet" href="/css/style.css">
+
     <!-- Preconexión para mejorar performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,23 +29,39 @@
 
 </head>
 <body>
+
+
     <!-- Navegación -->
-    <header class="header">
-        <div class="container">
-            <nav class="navbar">
+<header class="header">
+    <div class="container">
+        <nav class="navbar">
+            <!-- Logo al extremo izquierdo -->
+            <div class="logo-container">
                 <a href="#" class="logo">
-                    <img src="/Resource/logo.png" alt="BlackGreenStudio" width="50px">
+                    <img src="./Resource/logo.png" alt="BlackGreenStudio">
                 </a>
-                <ul class="nav-links">
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contacto" class="btn btn-primary">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+            </div>
+            
+            <!-- Menú hamburguesa al extremo derecho -->
+            <div class="menu-container">
+                <button class="menu-toggle" id="mobile-menu" aria-label="Menú">
+                    <span class="menu-icon">☰</span>
+                </button>
+            </div>
+            
+            <!-- Items de navegación -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto" class="btn btn-primary">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
 
     <!-- Hero Section -->
     <section class="hero">
@@ -54,7 +75,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="/Resource/logo.png" alt="Desarrollo de software" loading="lazy" width="150px">
+                <img src="./Resource/logo.png" alt="Desarrollo de software" loading="lazy" width="150px">
             </div>
         </div>
     </section>
@@ -68,7 +89,7 @@
             <div class="services-grid">
                 <article class="service-card">
                     <div class="service-icon">
-                        <img src="/Resource/html_css_js_transparent.png" alt="Desarrollo Web">
+                        <img src="./Resource/html_css_js_transparent.png" alt="Desarrollo Web">
                     </div>
                     <h3>Desarrollo Web</h3>
                     <p>Plataformas escalables con React, Node.js y arquitecturas serverless.</p>
@@ -81,7 +102,7 @@
                 
                 <article class="service-card">
                     <div class="service-icon">
-                        <img src="/Resource/kotlin_swift_logos_transparent.png" alt="Apps Móviles">
+                        <img src="./Resource/kotlin_swift_logos_transparent.png" alt="Apps Móviles">
                     </div>
                     <h3>Apps Móviles</h3>
                     <p>Aplicaciones nativas (Kotlin/Swift) o multiplataforma (Flutter/React Native).</p>
@@ -126,9 +147,25 @@
                         <img src="assets/projects/health-app.jpg" alt="App Asistente Virtual" loading="lazy">
                     </div>
                     <div class="project-details">
-                        <h3>Ghostfit Nexus</h3>
+                        <h3>HidroNexus</h3>
                         <p>Plataforma movile.</p>
-                        <p>Asistente virtual con mejoras en Tiempos, Productividad, Salud y Econimicas.</p>
+                        <p>✅ Optimiza tus procesos con tiempos cronometrados por etapa (lavado, secado, encerado).</p>
+                           ✅ Identifica vehículos automáticamente escaneando placas con la cámara. </p>
+                           ✅ Comunícate al instante con tus clientes vía WhatsApp: notificaciones personalizadas, estado del servicio y contacto directo.</p>
+                           ✅ Base de datos inteligente que guarda historial de servicios, preferencias y rendimiento por empleado.</p>
+                           ✅ Dashboard de control para visualizar métricas, rendimiento y eficiencia del negocio en tiempo real.</p>
+
+                           🎯 Ideal para autolavados que buscan:</p>
+
+                            Reducir esperas ⏳
+                            Mejorar la experiencia del cliente 🙌
+                            Controlar y medir cada parte del proceso 📊
+                            Fidelizar clientes con datos reales y precisos 🤝
+
+                            🔗 ¡Tu negocio merece una solución inteligente!
+                            HidroNexus: Más que una app, una herramienta poderosa para transformar tu autolavado.
+
+</p>
                         <div class="project-tech">
                             <span>Flutter</span>
                             <span>Firebase</span>
@@ -166,8 +203,7 @@
         <div class="container">
             <div class="about-content">
                 <h2>Expertos en Transformación Digital</h2>
-                <p>Con más de 5 años en el mercado, hemos ayudado a +20 empresas a alcanzar sus objetivos tecnológicos.</p>
-                
+                <p>Con más de 2 años en el mercado, hemos ayudado a +20 empresas a alcanzar sus objetivos tecnológicos.</p>
                 <div class="stats-grid">
                     <div class="stat-item">
                         <span class="stat-number">150+</span>
@@ -178,7 +214,23 @@
                         <span class="stat-label">Clientes Satisfechos</span>
                     </div>
                 </div>
-                
+                <br>
+                <h3>Mision</h3>
+                <p>"Desarrollar soluciones de software innovadoras y accesibles que impulsen la productividad, eficiencia y crecimiento
+                 sostenible de negocios y sociedades. Mediante tecnologías IT de vanguardia (web y móviles), 
+                 nos comprometemos a transformar procesos críticos en áreas como salud, finanzas y trabajo, siempre con responsabilidad ambiental y ética en el uso de recursos.
+                  Nuestro enfoque personalizado y humano garantiza que cada cliente alcance su máxima excelencia operativa."
+                </p>    
+                <br>
+                <br>
+                <h3>Vision</h3> 
+                <p>"Ser reconocidos como líderes en el desarrollo de tecnologías disruptivas para 2030, 
+                siendo el puente entre los negocios y la excelencia operativa a través de herramientas digitales escalables. 
+                Aspiramos a un mundo donde cada empresa, sin importar su tamaño, tenga acceso a soluciones IT que mejoren su desempeño, 
+                reduzcan su huella ecológica y empoderen a sus equipos, contribuyendo así a economías más justas y sociedades más conectadas."
+                </p>
+                <br> 
+                <br>
                 <a href="#" class="btn btn-primary">Conoce nuestro equipo</a>
             </div>
             <div class="about-image">
@@ -187,56 +239,107 @@
         </div>
     </section>
 
-    <!-- Contacto -->
-    <section id="contacto" class="contact">
-        <div class="container">
-            <div class="contact-form">
-                <h2>¿Listo para innovar?</h2>
-                <form id="contactForm">
+   <!-- Contacto -->
+<section id="contacto" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2>¿Listo para Transformar tu Negocio?</h2>
+            <p class="section-subtitle">Contáctanos y descubre cómo podemos ayudarte</p>
+        </div>
+        
+        <div class="contact-grid">
+            <!-- Formulario de Contacto -->
+            <div class="contact-form-container">
+                <form id="contactForm" class="contact-form">
                     <div class="form-group">
-                        <input type="text" id="name" placeholder="Nombre completo" required>
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" id="name" placeholder="Ingresa tu nombre" required>
                     </div>
+                    
                     <div class="form-group">
-                        <input type="email" id="email" placeholder="Correo electrónico" required>
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" placeholder="tucorreo@ejemplo.com" required>
                     </div>
+                    
                     <div class="form-group">
+                        <label for="service">Servicio de Interés</label>
                         <select id="service" required>
-                            <option value="">¿Qué servicio necesitas?</option>
+                            <option value="">Selecciona una opción</option>
                             <option value="web">Desarrollo Web</option>
                             <option value="mobile">Apps Móviles</option>
-                            <option value="consulting">Consultoría</option>
+                            <option value="consulting">Consultoría IT</option>
+                            <option value="other">Otro</option>
                         </select>
                     </div>
+                    
                     <div class="form-group">
-                        <textarea id="message" rows="5" placeholder="Cuéntanos sobre tu proyecto"></textarea>
+                        <label for="message">Tu Mensaje</label>
+                        <textarea id="message" rows="5" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <span>Enviar Mensaje</span>
+                        <i class="icon-send"></i>
+                    </button>
                 </form>
             </div>
+            
+            <!-- Información de Contacto -->
             <div class="contact-info">
-                <h3>Otras formas de contacto</h3>
-                <ul>
-                    <li><i class="icon-phone"></i> +52 33 4488 4616</li>
-                    <li><i class="icon-email"></i> blackgreenstudiomx@gmail.com</li>
-                    <li><i class="icon-whatsapp"></i> WhatsApp Business</li>
-                </ul>
-                
-                <div class="social-links">
-                    <a href="#"><i class="icon-linkedin"></i></a>
-                    <a href="#"><i class="icon-github"></i></a>
-                    <a href="#"><i class="icon-twitter"></i></a>
+                <div class="contact-card">
+                    <h3>Información de Contacto</h3>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="icon-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Teléfono</h4>
+                            <a href="tel:+523344884616">+52 33 4488 4616</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="icon-email"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:blackgreenstudiomx@gmail.com">blackgreenstudiomx@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="icon-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/523344884616" target="_blank">Envíanos un mensaje</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h4>Síguenos</h4>
+                        <div class="social-links">
+                            <a href="#" aria-label="LinkedIn"><i class="icon-linkedin"></i></a>
+                            <a href="#" aria-label="GitHub"><i class="icon-github"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <img src="assets/logo-light.svg" alt="BlackGreenStudio" width="160">
-                    <p>Impulsando negocios con tecnología desde 2020.</p>
+                    <img src="./Resource/logo.png" alt="BlackGreenStudio" width="100px">
+                    <p>Impulsando negocios con tecnología desde 2023.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Servicios</h4>
@@ -269,5 +372,6 @@
             alert('¡Gracias por tu mensaje! Nos pondremos en contacto pronto.');
         });
     </script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
