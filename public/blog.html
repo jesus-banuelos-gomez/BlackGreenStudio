@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog de BlackGreenStudio: Tendencias tecnológicas, guías y casos de éxito">
+    <title>BlackGreenStudio | Blog de Innovación Tecnológica</title>
+
+    <!-- Mismos estilos que index.html para consistencia -->
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/blog.css">
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+    <!-- Navegación consistente con index.html -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo-container">
+                    <a href="index.html" class="logo">
+                        <img src="./Resource/logo.png" alt="BlackGreenStudio">
+                    </a>
+                </div>
+                
+                <div class="menu-container">
+                    <button class="menu-toggle" id="mobile-menu" aria-label="Menú">
+                        <span class="menu-icon">☰</span>
+                    </button>
+                </div>
+                
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html#servicios">Servicios</a></li>
+                    <li><a href="index.html#proyectos">Proyectos</a></li>
+                    <li><a href="index.html#nosotros">Nosotros</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="index.html#contacto" class="btn btn-primary">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section del Blog -->
+    <section class="blog-hero">
+        <div class="container">
+            <div class="blog-hero-content">
+                <h1>Innovación Tecnológica en Acción</h1>
+                <p class="lead">Tendencias, guías prácticas y casos reales de transformación digital</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido Principal del Blog -->
+    <main class="blog-container">
+        <div class="container">
+            <!-- Artículo Destacado -->
+            <article class="featured-article">
+                <div class="featured-image">
+                    <img src="./Resource/blog/ia-tendencias.jpg" alt="Tendencias tecnológicas 2024" loading="lazy">
+                </div>
+                <div class="featured-content">
+                    <span class="category-tag">Tendencias</span>
+                    <h2>Las 3 Principales Tendencias que Impactarán a Negocios en 2024</h2>
+                    <p class="article-meta">Publicado el 15 de junio, 2024 | 8 min lectura</p>
+                    <div class="article-excerpt">
+                        <p>En BlackGreenStudio hemos identificado las tres tendencias tecnológicas que están revolucionando la industria:</p>
+                        <ol>
+                            <li><strong>AI as a Service</strong>: Plataformas que permiten integrar inteligencia artificial sin necesidad de equipos especializados, reduciendo costos hasta en un 60%.</li>
+                            <li><strong>Desarrollo Low-Code para Soluciones Empresariales</strong>: Acelerando tiempos de desarrollo en un 40% mientras mantenemos calidad empresarial.</li>
+                            <li><strong>Computación Edge para IoT</strong>: Procesamiento de datos en el dispositivo, reduciendo latencia en aplicaciones industriales críticas.</li>
+                        </ol>
+                        <p>Implementamos estas tecnologías en el sistema de gestión para HidroNexus, logrando un 35% de mejora en eficiencia operativa.</p>
+                    </div>
+                    <a href="#" class="btn btn-outline">Leer artículo completo</a>
+                </div>
+            </article>
+
+            <!-- Grid de Artículos -->
+            <div class="blog-grid">
+                <!-- Artículo 1 -->
+                <article class="blog-card">
+                    <div class="article-image">
+                        <img src="./Resource/blog/ia-movil.jpg" alt="IA en apps móviles" loading="lazy">
+                    </div>
+                    <div class="article-content">
+                        <span class="category-tag">Desarrollo Móvil</span>
+                        <h3>Evolución del Desarrollo Móvil con IA Integrada</h3>
+                        <p class="article-meta">10 de junio, 2024 | 6 min lectura</p>
+                        <p>Cómo estamos implementando modelos de ML en dispositivos móviles para:</p>
+                        <ul>
+                            <li>Procesamiento de lenguaje natural en apps de servicio al cliente</li>
+                            <li>Reconocimiento de imágenes en tiempo real (caso GhostFit Nexus)</li>
+                            <li>Personalización predictiva de interfaces</li>
+                        </ul>
+                        <a href="#" class="read-more">Continuar leyendo →</a>
+                    </div>
+                </article>
+
+                <!-- Artículo 2 -->
+                <article class="blog-card">
+                    <div class="article-image">
+                        <img src="./Resource/blog/frameworks.jpg" alt="Tecnologías 2024-2025" loading="lazy">
+                    </div>
+                    <div class="article-content">
+                        <span class="category-tag">Tecnologías</span>
+                        <h3>Nuestro Stack Tecnológico para 2024-2025</h3>
+                        <p class="article-meta">5 de junio, 2024 | 5 min lectura</p>
+                        <p>Las herramientas que estamos adoptando:</p>
+                        <div class="tech-badge">Flutter 3.0</div>
+                        <div class="tech-badge">Next.js 14</div>
+                        <div class="tech-badge">Kotlin Multiplatform</div>
+                        <div class="tech-badge">Rust para backend crítico</div>
+                        <a href="#" class="read-more">Ver comparativas →</a>
+                    </div>
+                </article>
+
+                <!-- Artículo 3 -->
+                <article class="blog-card">
+                    <div class="article-image">
+                        <img src="./Resource/blog/guia-transformacion.jpg" alt="Guía transformación digital" loading="lazy">
+                    </div>
+                    <div class="article-content">
+                        <span class="category-tag">Recursos</span>
+                        <h3>Guía Completa de Transformación Digital</h3>
+                        <p class="article-meta">28 de mayo, 2024 | PDF descargable</p>
+                        <p>Nueva guía disponible que cubre:</p>
+                        <ul>
+                            <li>Evaluación de madurez digital</li>
+                            <li>Roadmap personalizado</li>
+                            <li>Métricas clave para medir éxito</li>
+                        </ul>
+                        <a href="#" class="btn btn-secondary">Descargar Guía</a>
+                    </div>
+                </article>
+
+                <!-- Artículo 4 -->
+                <article class="blog-card">
+                    <div class="article-image">
+                        <img src="./Resource/blog/ia-generativa.jpg" alt="IA generativa en proyectos" loading="lazy">
+                    </div>
+                    <div class="article-content">
+                        <span class="category-tag">Casos Reales</span>
+                        <h3>Implementaciones Prácticas de IA Generativa</h3>
+                        <p class="article-meta">20 de mayo, 2024 | Estudio de caso</p>
+                        <p>Proyectos donde aplicamos IA generativa:</p>
+                        <ul>
+                            <li>Generación automática de contenido para e-learning</li>
+                            <li>Prototipado rápido de interfaces</li>
+                            <li>Asistentes virtuales con personalidad de marca</li>
+                        </ul>
+                        <a href="#" class="read-more">Ver casos →</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Newsletter -->
+            <section class="blog-newsletter">
+                <h3>Recibe lo último en tecnología</h3>
+                <p>Suscríbete para recibir artículos exclusivos y guías prácticas</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn btn-primary">Suscribirme</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer consistente con index.html -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="./Resource/logo.png" alt="BlackGreenStudio" width="100px">
+                    <p>Impulsando negocios con tecnología desde 2023.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Explorar</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.html#servicios">Servicios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Términos de servicio</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2024 BlackGreenStudio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/menu.js"></script>
+    <script>
+        // Script específico para el blog
+        document.querySelectorAll('.blog-card').forEach(card => {
+            card.addEventListener('click', (e) => {
+                // Evita redirección si se hace clic en un enlace interno
+                if (!e.target.closest('a')) {
+                    const link = card.querySelector('a');
+                    if (link) window.location = link.href;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
