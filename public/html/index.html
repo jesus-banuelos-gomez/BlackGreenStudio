@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/contacto.css">
-    
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/about.css">
+
 
     <!-- Preconexión para mejorar performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -118,22 +120,35 @@
         </div>
     </section>
 
-    <!-- Proyectos Destacados -->
-    <section id="proyectos" class="projects">
-        <div class="container">
-            <h2>Casos de Éxito</h2>
-            <p class="section-subtitle">Soluciones reales para clientes en múltiples industrias</p>
+
+
+
+<!-- Proyectos Destacados -->
+<section id="proyectos" class="projects">
+    <div class="container">
+        <h2>Casos de Éxito</h2>
+        <p class="section-subtitle">Soluciones reales para clientes en múltiples industrias</p>
+        
+        <div class="projects-carousel-container">
+            <button class="carousel-btn prev" aria-label="Anterior">
+                <span>&#10094;</span>
+            </button>
             
             <div class="projects-carousel">
-                <!-- Ejemplo de proyecto -->
+                <!-- Proyecto 1 -->
                 <article class="project-card">
                     <div class="project-image">
-                        <img src="assets/projects/health-app.jpg" alt="App de Salud" loading="lazy">
+                        <img src="../Resource/invinitify.jpg" alt="App de invitaciones digitales" loading="lazy">
                     </div>
                     <div class="project-details">
-                        <h3>Sistema de Telemedicina</h3>
-                        <p>Plataforma web + móvil para clínica con 50% de reducción en tiempos de espera.</p>
-                        <div class="project-tech">
+                        <h3>Invitify</h3>
+                        <p>Plataforma web para diseño de invitaciones digitales e imprenta .</p>
+                        <ul class="service-features">
+                            <li>Mejora tiempos de diseño⏳</li>
+                            <li>Mejores estilos en tipografia y diseño🙌</li>
+                            <li>Evita contratiempos🤝</li>
+                        </ul>
+                        <div class="project-tech"> 
                             <span>Flutter</span>
                             <span>Firebase</span>
                             <span>Node.js</span>
@@ -141,30 +156,21 @@
                         <a href="#" class="btn btn-outline">Ver estudio de caso</a>
                     </div>
                 </article>
-                <br><br>
+
+                <!-- Proyecto 2 -->
                 <article class="project-card">
                     <div class="project-image">
-                        <img src="assets/projects/health-app.jpg" alt="App Asistente Virtual" loading="lazy">
+                        <img src="../Resource/hydronexus.jpeg" alt="App gestion de negocio" loading="lazy">
                     </div>
                     <div class="project-details">
                         <h3>HidroNexus</h3>
-                        <p>Plataforma movile.</p>
-                        <p>✅ Optimiza tus procesos con tiempos cronometrados por etapa (lavado, secado, encerado).</p>
-                           ✅ Identifica vehículos automáticamente escaneando placas con la cámara. </p>
-                           ✅ Comunícate al instante con tus clientes vía WhatsApp: notificaciones personalizadas, estado del servicio y contacto directo.</p>
-                           ✅ Base de datos inteligente que guarda historial de servicios, preferencias y rendimiento por empleado.</p>
-                           ✅ Dashboard de control para visualizar métricas, rendimiento y eficiencia del negocio en tiempo real.</p>
-
-                           🎯 Ideal para autolavados que buscan:</p>
-
-                            Reducir esperas ⏳
-                            Mejorar la experiencia del cliente 🙌
-                            Controlar y medir cada parte del proceso 📊
-                            Fidelizar clientes con datos reales y precisos 🤝
-
-                            🔗 ¡Tu negocio merece una solución inteligente!
-                            HidroNexus: Más que una app, una herramienta poderosa para transformar tu autolavado.
-                        </p>
+                        <p>Plataforma web + móvil para negocios de auto lavado gestion de tiempos.</p>
+                        <ul class="service-features">
+                            <li>Reducir esperas ⏳</li>
+                            <li>Mejorar la experiencia del cliente 🙌</li>
+                            <li>Controlar y medir cada parte del proceso 📊</li>
+                            <li>Fidelizar clientes con datos reales y precisos 🤝</li>
+                        </ul>
                         <div class="project-tech">
                             <span>Flutter</span>
                             <span>Firebase</span>
@@ -173,14 +179,15 @@
                         <a href="#" class="btn btn-outline">Ver estudio de caso</a>
                     </div>
                 </article>
-               
-                 <article class="project-card">
+
+                <!-- Proyecto 3 -->
+                <article class="project-card">
                     <div class="project-image">
-                        <img src="assets/projects/health-app.jpg" alt="App Asistente Virtual" loading="lazy">
+                        <img src="../Resource/ghostfit_nexus.jpeg" alt="App Asistente Virtual" loading="lazy">
                     </div>
                     <div class="project-details">
                         <h3>Ghostfit Nexus</h3>
-                        <p>Plataforma movile.</p>
+                        <p>Plataforma web y móvil.</p>
                         <p>Asistente virtual con mejoras en Tiempos, Productividad, Salud y Econimicas.</p>
                         <div class="project-tech">
                             <span>Flutter</span>
@@ -190,11 +197,23 @@
                         <a href="#" class="btn btn-outline">Ver estudio de caso</a>
                     </div>
                 </article>
-
-
+                
+                <!-- Puedes añadir más proyectos aquí -->
             </div>
+            
+            <button class="carousel-btn next" aria-label="Siguiente">
+                <span>&#10095;</span>
+            </button>
         </div>
-    </section>
+        
+        <div class="carousel-dots">
+            <!-- Los puntos de navegación se generan con JS -->
+        </div>
+    </div>
+</section>
+
+
+
 
     <!-- Sobre Nosotros -->
     <section id="nosotros" class="about">
@@ -204,7 +223,7 @@
                 <p>Con más de 2 años en el mercado, hemos ayudado a +20 empresas a alcanzar sus objetivos tecnológicos.</p>
                 <div class="stats-grid">
                     <div class="stat-item">
-                        <span class="stat-number">150+</span>
+                        <span class="stat-number">10+</span>
                         <span class="stat-label">Proyectos Entregados</span>
                     </div>
                     <div class="stat-item">
@@ -213,27 +232,35 @@
                     </div>
                 </div>
                 <br>
-                <h3>Mision</h3>
-                <p>"Desarrollar soluciones de software innovadoras y accesibles que impulsen la productividad, eficiencia y crecimiento
-                 sostenible de negocios y sociedades. Mediante tecnologías IT de vanguardia (web y móviles), 
-                 nos comprometemos a transformar procesos críticos en áreas como salud, finanzas y trabajo, siempre con responsabilidad ambiental y ética en el uso de recursos.
-                  Nuestro enfoque personalizado y humano garantiza que cada cliente alcance su máxima excelencia operativa."
+                <h3>Misión</h3>
+                <p>"Diseñar soluciones de software disruptivas y accesibles que revolucionen la productividad, 
+                    eficiencia y crecimiento sostenible de empresas y comunidades. Combinando tecnologías de vanguardia 
+                    (web, móvil e inteligencia artificial), reimaginamos procesos críticos en sectores como salud, 
+                    finanzas y gestión laboral, con un compromiso inquebrantable con la ética, la inclusión y la minimización 
+                    del impacto ambiental. Nuestro enfoque centrado en el ser humano y la adaptabilidad garantiza que 
+                    cada cliente transforme sus desafíos en ventajas competitivas."
                 </p>    
               
-                <h3>Vision</h3> 
-                <p>"Ser reconocidos como líderes en el desarrollo de tecnologías disruptivas para 2030, 
-                siendo el puente entre los negocios y la excelencia operativa a través de herramientas digitales escalables. 
-                Aspiramos a un mundo donde cada empresa, sin importar su tamaño, tenga acceso a soluciones IT que mejoren su desempeño, 
-                reduzcan su huella ecológica y empoderen a sus equipos, contribuyendo así a economías más justas y sociedades más conectadas."
+                <h3>Visión</h3> 
+                <p>"Liderar la revolución digital para 2030 como referentes en innovación tecnológica, siendo el catalizador que conecta
+                     a las empresas con la excelencia operativa mediante herramientas escalables e inteligentes. Visualizamos un ecosistema
+                      donde toda organización —independientemente de su tamaño— pueda optimizar su desempeño, democratizar oportunidades y operar
+                       con sostenibilidad, impulsando economías más equitativas y sociedades digitalmente empoderadas."
                 </p>
              
                 <a href="#" class="btn btn-primary">Conoce nuestro equipo</a>
             </div>
             <div class="about-image">
-                <img src="assets/team-meeting.jpg" alt="Equipo TecnoSoluciones" loading="lazy">
+                <img src="../Resource/Trabajar en tecnología_ cuáles son los lenguajes de programación más buscados por las empresas.jfif" alt="Equipo TecnoSoluciones" loading="lazy">
             </div>
+
+           
         </div>
     </section>
+
+
+
+
 
    <!-- Contacto -->
 <section id="contacto" class="contact">
@@ -369,5 +396,6 @@
         });
     </script>
     <script src="../js/menu.js"></script>
+    <script src="../js/projects.js"></script>
 </body>
 </html>

@@ -1,0 +1,342 @@
+/* Estilos generales para la sección de proyectos */
+.projects {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+    overflow: hidden;
+    position: relative;
+}
+
+.projects .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    font-weight: 300;
+}
+
+/* Contenedor del carrusel */
+.projects-carousel-container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 40px;
+}
+
+/* Carrusel */
+.projects-carousel {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 20px 0;
+    margin: 0 -15px;
+    scrollbar-width: none; /* Firefox */
+}
+
+.projects-carousel::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+/* Tarjeta de proyecto */
+.project-card {
+    scroll-snap-align: start;
+    flex: 0 0 calc(33.333% - 20px);
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    min-width: 300px;
+}
+
+.project-image {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-details {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 200px);
+}
+
+.project-details h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.project-details p {
+    color: #34495e;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Lista de características */
+.service-features {
+    margin: 15px 0;
+    padding-left: 20px;
+    flex-grow: 1;
+}
+
+.service-features li {
+    color: #34495e;
+    margin-bottom: 8px;
+    line-height: 1.5;
+    position: relative;
+}
+
+.service-features li::before {
+    content: "•";
+    color: #4CAF50;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Tecnologías usadas */
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.project-tech span {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Botón */
+.btn-outline {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid #4CAF50;
+    color: #4CAF50;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.btn-outline:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Botones de navegación */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #4CAF50;
+    transition: all 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background: #4CAF50;
+    color: white;
+}
+
+.carousel-btn.prev {
+    left: 0;
+}
+
+.carousel-btn.next {
+    right: 0;
+}
+
+.carousel-btn span {
+    position: relative;
+    top: -2px;
+}
+
+/* Puntos de navegación */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.carousel-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-dot.active {
+    background: #4CAF50;
+    transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .project-card {
+        flex: 0 0 calc(50% - 15px);
+    }
+}
+
+@media (max-width: 768px) {
+    .projects {
+        padding: 60px 0;
+    }
+    
+    .projects h2 {
+        font-size: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    .project-card {
+        flex: 0 0 85%;
+    }
+    
+    .projects-carousel-container {
+        padding: 0 30px;
+    }
+    
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+}
+
+
+/* Añade esto al final de tu archivo CSS existente */
+
+/* Pantallas pequeñas (menos de 576px) */
+@media (max-width: 575.98px) {
+    .projects {
+        padding: 50px 0;
+    }
+    
+    .projects h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+    
+    .section-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 30px;
+    }
+    
+    .projects-carousel-container {
+        padding: 0 20px;
+    }
+    
+    .project-card {
+        min-width: 85%;
+        scroll-snap-align: center;
+    }
+    
+    .project-image {
+        height: 180px;
+    }
+    
+    .project-details {
+        padding: 20px;
+    }
+    
+    .project-details h3 {
+        font-size: 1.3rem;
+    }
+    
+    .project-details p, 
+    .service-features li {
+        font-size: 0.9rem;
+    }
+    
+    .carousel-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+    
+    .carousel-dots {
+        margin-top: 20px;
+    }
+    
+    .carousel-dot {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+/* Pantallas muy pequeñas (menos de 400px) */
+@media (max-width: 399.98px) {
+    .project-card {
+        min-width: 90%;
+    }
+    
+    .project-image {
+        height: 150px;
+    }
+    
+    .project-details {
+        padding: 15px;
+    }
+    
+    .btn-outline {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .project-tech span {
+        padding: 4px 10px;
+        font-size: 0.75rem;
+    }
+}
