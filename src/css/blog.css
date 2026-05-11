@@ -1,6 +1,6 @@
 /* Estilos específicos para la página de blog */
 .blog-hero {
-    background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+    background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
     color: white;
     padding: 100px 0 60px;
     text-align: center;
@@ -29,7 +29,7 @@
 .featured-image {
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .featured-image img {
@@ -44,8 +44,8 @@
 
 .category-tag {
     display: inline-block;
-    background: #E8F5E9;
-    color: #2E7D32;
+    background: #e8f5e9;
+    color: #2e7d32;
     padding: 5px 15px;
     border-radius: 20px;
     font-size: 0.8rem;
@@ -76,13 +76,15 @@
     border-radius: 8px;
     overflow: hidden;
     background: white;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
 }
 
 .blog-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .article-image {
@@ -111,7 +113,7 @@
 }
 
 .read-more {
-    color: #4CAF50;
+    color: #4caf50;
     font-weight: 600;
     text-decoration: none;
     display: inline-block;
@@ -120,8 +122,8 @@
 
 .tech-badge {
     display: inline-block;
-    background: #E8F5E9;
-    color: #2E7D32;
+    background: #e8f5e9;
+    color: #2e7d32;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.8rem;
@@ -164,25 +166,25 @@
     .featured-article {
         grid-template-columns: 1fr;
     }
-    
+
     .blog-hero h1 {
         font-size: 2.2rem;
     }
-    
+
     .blog-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .newsletter-form {
         flex-direction: column;
     }
-    
+
     .newsletter-form input,
     .newsletter-form button {
         width: 100%;
         border-radius: 4px;
     }
-    
+
     .newsletter-form button {
         margin-top: 10px;
     }

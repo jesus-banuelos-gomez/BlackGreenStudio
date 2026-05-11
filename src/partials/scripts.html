@@ -1,0 +1,20 @@
+<script src="../js/menu.js"></script>
+<script src="../js/projects.js"></script>
+<script src="../js/i18n.js"></script>
+<script src="../js/chat.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var path = window.location.pathname;
+        document.querySelectorAll('.nav-links a').forEach(function (link) {
+            var href = link.getAttribute('href');
+            if (href === 'blog.html' && (path.includes('blog') || path.endsWith('blog'))) {
+                link.classList.add('active');
+            }
+            if ((href === 'index.html' || href === 'index.html#servicios') && !path.includes('blog')) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
+
+<!--#include virtual="../partials/chat-widget.html" -->

@@ -1,6 +1,6 @@
 /* --- Estilos base del footer --- */
 .footer {
-    background-color: #4CAF50; /* Color de fondo oscuro */
+    background-color: #4caf50; /* Color de fondo oscuro */
     color: #ffffff; /* Color de texto claro */
     padding: 3rem 0 0; /* Espaciado superior */
     font-family: 'Arial', sans-serif; /* Fuente general */
@@ -89,12 +89,12 @@
     .footer-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .footer-col {
         margin-bottom: 2rem;
         text-align: center;
     }
-    
+
     .footer-col h4::after {
         left: 50%;
         transform: translateX(-50%);

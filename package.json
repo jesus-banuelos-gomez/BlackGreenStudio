@@ -1,0 +1,24 @@
+{
+  "name": "blackgreenstudio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BlackGreenStudio - Soluciones Tecnológicas",
+  "scripts": {
+    "start": "node scripts/build.js && npx serve public",
+    "build": "node scripts/build.js",
+    "test": "node tests/research.test.js",
+    "dev": "npm start",
+    "lint": "npx eslint src/ --ext .html,.js",
+    "lint:fix": "npx eslint src/ --ext .html,.js --fix",
+    "format": "npx prettier --write \"src/**/*.{html,js,css}\"",
+    "format:check": "npx prettier --check \"src/**/*.{html,js,css}\"",
+    "deploy": "npm run build && npx firebase deploy",
+    "serve": "npx serve public"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-plugin-html": "^7.1.0",
+    "prettier": "^3.2.0",
+    "serve": "^14.2.0"
+  }
+}

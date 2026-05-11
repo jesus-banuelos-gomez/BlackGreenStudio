@@ -114,8 +114,8 @@
 }
 
 .service-features li::before {
-    content: "•";
-    color: #4CAF50;
+    content: '•';
+    color: #4caf50;
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -143,8 +143,8 @@
 .btn-outline {
     display: inline-block;
     padding: 10px 25px;
-    border: 2px solid #4CAF50;
-    color: #4CAF50;
+    border: 2px solid #4caf50;
+    color: #4caf50;
     border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
@@ -154,7 +154,7 @@
 }
 
 .btn-outline:hover {
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
 }
 
@@ -175,12 +175,12 @@
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    color: #4CAF50;
+    color: #4caf50;
     transition: all 0.3s ease;
 }
 
 .carousel-btn:hover {
-    background: #4CAF50;
+    background: #4caf50;
     color: white;
 }
 
@@ -215,7 +215,7 @@
 }
 
 .carousel-dot.active {
-    background: #4CAF50;
+    background: #4caf50;
     transform: scale(1.2);
 }
 
@@ -230,31 +230,29 @@
     .projects {
         padding: 60px 0;
     }
-    
+
     .projects h2 {
         font-size: 2rem;
     }
-    
+
     .section-subtitle {
         font-size: 1rem;
     }
-    
+
     .project-card {
         flex: 0 0 85%;
     }
-    
+
     .projects-carousel-container {
         padding: 0 30px;
     }
-    
+
     .carousel-btn {
         width: 40px;
         height: 40px;
         font-size: 1.2rem;
     }
-
 }
-
 
 /* Añade esto al final de tu archivo CSS existente */
 
@@ -263,53 +261,53 @@
     .projects {
         padding: 50px 0;
     }
-    
+
     .projects h2 {
         font-size: 1.8rem;
         margin-bottom: 10px;
     }
-    
+
     .section-subtitle {
         font-size: 0.95rem;
         margin-bottom: 30px;
     }
-    
+
     .projects-carousel-container {
         padding: 0 20px;
     }
-    
+
     .project-card {
         min-width: 85%;
         scroll-snap-align: center;
     }
-    
+
     .project-image {
         height: 180px;
     }
-    
+
     .project-details {
         padding: 20px;
     }
-    
+
     .project-details h3 {
         font-size: 1.3rem;
     }
-    
-    .project-details p, 
+
+    .project-details p,
     .service-features li {
         font-size: 0.9rem;
     }
-    
+
     .carousel-btn {
         width: 36px;
         height: 36px;
         font-size: 1rem;
     }
-    
+
     .carousel-dots {
         margin-top: 20px;
     }
-    
+
     .carousel-dot {
         width: 10px;
         height: 10px;
@@ -321,20 +319,20 @@
     .project-card {
         min-width: 90%;
     }
-    
+
     .project-image {
         height: 150px;
     }
-    
+
     .project-details {
         padding: 15px;
     }
-    
+
     .btn-outline {
         padding: 8px 20px;
         font-size: 0.9rem;
     }
-    
+
     .project-tech span {
         padding: 4px 10px;
         font-size: 0.75rem;

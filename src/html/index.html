@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="es" data-lang="es">
+    <head>
+        <meta
+            name="description"
+            content="Soluciones tecnológicas personalizadas: Desarrollo de software, aplicaciones móviles y consultoría en innovación digital"
+        />
+        <title>BlackGreenStudio</title>
+
+        <!--#include virtual="../partials/head.html" -->
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="BlackGreenStudio - Soluciones Tecnológicas" />
+        <meta
+            property="og:description"
+            content="Soluciones tecnológicas personalizadas: Desarrollo de software, aplicaciones móviles y consultoría en innovación digital"
+        />
+        <meta property="og:image" content="https://blackgreenstudio.web.app/Resource/logo.png" />
+        <meta property="og:url" content="https://blackgreenstudio.web.app" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="es_MX" />
+
+        <!-- JSON-LD Structured Data -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "BlackGreenStudio",
+                "url": "https://blackgreenstudio.web.app",
+                "logo": "https://blackgreenstudio.web.app/Resource/logo.png",
+                "description": "Soluciones tecnológicas personalizadas: Desarrollo de software, aplicaciones móviles y consultoría en innovación digital",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+52-33-4488-4616",
+                    "contactType": "sales",
+                    "email": "blackgreenstudiomx@gmail.com"
+                },
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "MX"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <!--#include virtual="../partials/nav.html" -->
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 data-i18n="hero.title">Soluciones Tecnológicas que Impulsan tu Negocio</h1>
+                    <p class="lead" data-i18n="hero.subtitle">
+                        Desarrollamos software a medida para optimizar procesos, mejorar la experiencia de usuario y
+                        escalar tu operación.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="index.html#contacto" class="btn btn-primary" data-i18n="hero.cta.contact"
+                            >Charlar con un experto</a
+                        >
+                        <a href="index.html#servicios" class="btn btn-secondary" data-i18n="hero.cta.services"
+                            >Ver servicios</a
+                        >
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="../Resource/logo.png" alt="Desarrollo de software" loading="lazy" width="150px" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios -->
+        <section id="servicios" class="services">
+            <div class="container">
+                <h2 data-i18n="services.title">Nuestros Servicios</h2>
+                <p class="section-subtitle" data-i18n="services.subtitle">
+                    Soluciones especializadas para cada necesidad
+                </p>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <img
+                                src="../Resource/html_css_js_transparent.png"
+                                alt="Desarrollo Web"
+                                data-i18n-alt="service.web.title"
+                            />
+                        </div>
+                        <h3 data-i18n="service.web.title">Desarrollo Web</h3>
+                        <p data-i18n="service.web.desc">
+                            Plataformas escalables con tecnologías modernas: React, Node.js, Next.js y arquitecturas
+                            serverless.
+                        </p>
+                        <ul class="service-features">
+                            <li data-i18n="service.web.feat1">E-commerce y tiendas online</li>
+                            <li data-i18n="service.web.feat2">Landing pages y sitios corporativos</li>
+                            <li data-i18n="service.web.feat3">Sistemas CRM y SaaS</li>
+                            <li data-i18n="service.web.feat4">APIs y microservicios</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <img
+                                src="../Resource/kotlin_swift_logos_transparent.png"
+                                alt="Apps Móviles"
+                                data-i18n-alt="service.mobile.title"
+                            />
+                        </div>
+                        <h3 data-i18n="service.mobile.title">Apps Móviles</h3>
+                        <p data-i18n="service.mobile.desc">
+                            Aplicaciones nativas (Kotlin/Swift) o multiplataforma (Flutter/React Native) con experiencia
+                            de usuario excepcional.
+                        </p>
+                        <ul class="service-features">
+                            <li data-i18n="service.mobile.feat1">UI/UX optimizado para móviles</li>
+                            <li data-i18n="service.mobile.feat2">Integración con APIs y servicios cloud</li>
+                            <li data-i18n="service.mobile.feat3">Publicación en App Store y Google Play</li>
+                            <li data-i18n="service.mobile.feat4">Notificaciones push y tiempo real</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <img src="../Resource/logo.png" alt="Consultoría IT" />
+                        </div>
+                        <h3 data-i18n="service.consulting.title">Consultoría IT</h3>
+                        <p data-i18n="service.consulting.desc">
+                            Asesoría tecnológica estratégica para transformar tu negocio con las mejores prácticas y
+                            herramientas del mercado.
+                        </p>
+                        <ul class="service-features">
+                            <li data-i18n="service.consulting.feat1">Auditoría tecnológica y diagnóstico</li>
+                            <li data-i18n="service.consulting.feat2">Estrategia de transformación digital</li>
+                            <li data-i18n="service.consulting.feat3">Arquitectura de software</li>
+                            <li data-i18n="service.consulting.feat4">Selección de stack tecnológico</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <img src="../Resource/logo.png" alt="Migración a la Nube" />
+                        </div>
+                        <h3 data-i18n="service.cloud.title">Migración a la Nube</h3>
+                        <p data-i18n="service.cloud.desc">
+                            Migración y optimización de infraestructura en AWS, Google Cloud y Azure para máxima
+                            escalabilidad y eficiencia.
+                        </p>
+                        <ul class="service-features">
+                            <li data-i18n="service.cloud.feat1">Migración de servidores on-premise</li>
+                            <li data-i18n="service.cloud.feat2">Arquitectura serverless</li>
+                            <li data-i18n="service.cloud.feat3">DevOps y CI/CD</li>
+                            <li data-i18n="service.cloud.feat4">Optimización de costos y rendimiento</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <img src="../Resource/icono.jpg" alt="UI/UX Design" />
+                        </div>
+                        <h3 data-i18n="service.design.title">UI/UX Design</h3>
+                        <p data-i18n="service.design.desc">
+                            Diseño de interfaces centradas en el usuario que convierten. Investigación, prototipado y
+                            pruebas de usabilidad.
+                        </p>
+                        <ul class="service-features">
+                            <li data-i18n="service.design.feat1">Wireframes y prototipos interactivos</li>
+                            <li data-i18n="service.design.feat2">Investigación de usuarios</li>
+                            <li data-i18n="service.design.feat3">Sistemas de diseño (Design Systems)</li>
+                            <li data-i18n="service.design.feat4">Pruebas de usabilidad</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <img src="../Resource/logo.png" alt="SEO & Marketing Digital" />
+                        </div>
+                        <h3 data-i18n="service.seo.title">SEO & Marketing Digital</h3>
+                        <p data-i18n="service.seo.desc">
+                            Estrategias de posicionamiento orgánico y marketing digital para aumentar tu visibilidad y
+                            atraer más clientes.
+                        </p>
+                        <ul class="service-features">
+                            <li data-i18n="service.seo.feat1">Auditoría SEO técnica y de contenido</li>
+                            <li data-i18n="service.seo.feat2">Estrategia de contenido y keywords</li>
+                            <li data-i18n="service.seo.feat3">Optimización de rendimiento web</li>
+                            <li data-i18n="service.seo.feat4">Analítica y reportes</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos Destacados -->
+        <section id="proyectos" class="projects">
+            <div class="container">
+                <h2 data-i18n="projects.title">Casos de Éxito</h2>
+                <p class="section-subtitle" data-i18n="projects.subtitle">
+                    Soluciones reales para clientes en múltiples industrias
+                </p>
+
+                <div class="projects-carousel-container">
+                    <button class="carousel-btn prev" aria-label="Anterior">
+                        <span>&#10094;</span>
+                    </button>
+
+                    <div class="projects-carousel">
+                        <article class="project-card">
+                            <div class="project-image">
+                                <img
+                                    src="../Resource/invinitify.jpg"
+                                    alt="App de invitaciones digitales"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <div class="project-details">
+                                <h3>Invitify</h3>
+                                <p>Plataforma web para diseño de invitaciones digitales e imprenta.</p>
+                                <ul class="service-features">
+                                    <li>Mejora tiempos de diseño</li>
+                                    <li>Mejores estilos en tipografia y diseño</li>
+                                    <li>Evita contratiempos</li>
+                                </ul>
+                                <div class="project-tech">
+                                    <span>Flutter</span>
+                                    <span>Firebase</span>
+                                    <span>Node.js</span>
+                                </div>
+                                <a href="#" class="btn btn-outline" data-i18n="projects.case-study"
+                                    >Ver estudio de caso</a
+                                >
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-image">
+                                <img src="../Resource/hydronexus.jpeg" alt="App gestion de negocio" loading="lazy" />
+                            </div>
+                            <div class="project-details">
+                                <h3>HidroNexus</h3>
+                                <p>Plataforma web + móvil para negocios de auto lavado gestion de tiempos.</p>
+                                <ul class="service-features">
+                                    <li>Reducir esperas</li>
+                                    <li>Mejorar la experiencia del cliente</li>
+                                    <li>Controlar y medir cada parte del proceso</li>
+                                    <li>Fidelizar clientes con datos reales y precisos</li>
+                                </ul>
+                                <div class="project-tech">
+                                    <span>Flutter</span>
+                                    <span>Firebase</span>
+                                    <span>Node.js</span>
+                                </div>
+                                <a href="#" class="btn btn-outline" data-i18n="projects.case-study"
+                                    >Ver estudio de caso</a
+                                >
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-image">
+                                <img src="../Resource/ghostfit_nexus.jpeg" alt="App Asistente Virtual" loading="lazy" />
+                            </div>
+                            <div class="project-details">
+                                <h3>Ghostfit Nexus</h3>
+                                <p>
+                                    Plataforma web y móvil. Asistente virtual con mejoras en Tiempos, Productividad,
+                                    Salud y Economicas.
+                                </p>
+                                <div class="project-tech">
+                                    <span>Flutter</span>
+                                    <span>Firebase</span>
+                                    <span>Node.js</span>
+                                </div>
+                                <a href="#" class="btn btn-outline" data-i18n="projects.case-study"
+                                    >Ver estudio de caso</a
+                                >
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-image">
+                                <img src="../Resource/PopGo.jpg" alt="App Asistente Virtual" loading="lazy" />
+                            </div>
+                            <div class="project-details">
+                                <h3>Pop&Go</h3>
+                                <p>
+                                    Plataforma web y móvil. Asistente virtual con mejoras en Tiempos, Productividad,
+                                    Salud y Economicas.
+                                </p>
+                                <div class="project-tech">
+                                    <span>Flutter</span>
+                                    <span>Firebase</span>
+                                    <span>Node.js</span>
+                                </div>
+                                <a href="#" class="btn btn-outline" data-i18n="projects.case-study"
+                                    >Ver estudio de caso</a
+                                >
+                            </div>
+                        </article>
+                    </div>
+
+                    <button class="carousel-btn next" aria-label="Siguiente">
+                        <span>&#10095;</span>
+                    </button>
+                </div>
+
+                <div class="carousel-dots"></div>
+            </div>
+        </section>
+
+        <!-- Sobre Nosotros -->
+        <section id="nosotros" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <h2 data-i18n="about.title">Expertos en Transformación Digital</h2>
+                    <p data-i18n="about.desc">
+                        Con más de 2 años en el mercado, hemos ayudado a +20 empresas a alcanzar sus objetivos
+                        tecnológicos.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label" data-i18n="about.stats.projects">Proyectos Entregados</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">95%</span>
+                            <span class="stat-label" data-i18n="about.stats.satisfaction">Clientes Satisfechos</span>
+                        </div>
+                    </div>
+                    <br />
+                    <h3 data-i18n="about.mission.title">Misión</h3>
+                    <p data-i18n="about.mission.text">
+                        "Diseñar soluciones de software disruptivas y accesibles que revolucionen la productividad,
+                        eficiencia y crecimiento sostenible de empresas y comunidades. Combinando tecnologías de
+                        vanguardia (web, móvil e inteligencia artificial), reimaginamos procesos críticos en sectores
+                        como salud, finanzas y gestión laboral, con un compromiso inquebrantable con la ética, la
+                        inclusión y la minimización del impacto ambiental. Nuestro enfoque centrado en el ser humano y
+                        la adaptabilidad garantiza que cada cliente transforme sus desafíos en ventajas competitivas."
+                    </p>
+
+                    <h3 data-i18n="about.vision.title">Visión</h3>
+                    <p data-i18n="about.vision.text">
+                        "Liderar la revolución digital para 2030 como referentes en innovación tecnológica, siendo el
+                        catalizador que conecta a las empresas con la excelencia operativa mediante herramientas
+                        escalables e inteligentes. Visualizamos un ecosistema donde toda organización
+                        —independientemente de su tamaño— pueda optimizar su desempeño, democratizar oportunidades y
+                        operar con sostenibilidad, impulsando economías más equitativas y sociedades digitalmente
+                        empoderadas."
+                    </p>
+
+                    <a href="#" class="btn btn-primary" data-i18n="about.team-cta">Conoce nuestro equipo</a>
+                </div>
+                <div class="about-image">
+                    <img src="../Resource/icono.jpg" alt="Equipo BlackGreenStudio" loading="lazy" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="contact.title">¿Listo para Transformar tu Negocio?</h2>
+                    <p class="section-subtitle" data-i18n="contact.subtitle">
+                        Contáctanos y descubre cómo podemos ayudarte
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-form-container">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name" data-i18n="contact.form.name">Nombre Completo</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Ingresa tu nombre"
+                                    data-i18n-placeholder="contact.form.name-placeholder"
+                                    required
+                                />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" data-i18n="contact.form.email">Correo Electrónico</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="tucorreo@ejemplo.com"
+                                    data-i18n-placeholder="contact.form.email-placeholder"
+                                    required
+                                />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="service" data-i18n="contact.form.service">Servicio de Interés</label>
+                                <select id="service" name="service" required>
+                                    <option value="" data-i18n="contact.form.service-default">
+                                        Selecciona una opción
+                                    </option>
+                                    <option value="web" data-i18n="contact.form.service-web">Desarrollo Web</option>
+                                    <option value="mobile" data-i18n="contact.form.service-mobile">Apps Móviles</option>
+                                    <option value="consulting" data-i18n="contact.form.service-consulting">
+                                        Consultoría IT
+                                    </option>
+                                    <option value="cloud" data-i18n="contact.form.service-cloud">
+                                        Migración a la Nube
+                                    </option>
+                                    <option value="design" data-i18n="contact.form.service-design">UI/UX Design</option>
+                                    <option value="seo" data-i18n="contact.form.service-seo">SEO & Marketing</option>
+                                    <option value="other" data-i18n="contact.form.service-other">Otro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" data-i18n="contact.form.message">Tu Mensaje</label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="5"
+                                    placeholder="Cuéntanos sobre tu proyecto..."
+                                    data-i18n-placeholder="contact.form.message-placeholder"
+                                ></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <span data-i18n="contact.form.submit">Enviar Mensaje</span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <h3 data-i18n="contact.info.title">Información de Contacto</h3>
+
+                            <div class="contact-method">
+                                <div class="contact-icon"><i class="icon-phone"></i></div>
+                                <div class="contact-details">
+                                    <h4 data-i18n="contact.info.phone">Teléfono</h4>
+                                    <a href="tel:+523344884616">+52 33 4488 4616</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon"><i class="icon-email"></i></div>
+                                <div class="contact-details">
+                                    <h4 data-i18n="contact.info.email-label">Email</h4>
+                                    <a href="mailto:blackgreenstudiomx@gmail.com">blackgreenstudiomx@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon"><i class="icon-whatsapp"></i></div>
+                                <div class="contact-details">
+                                    <h4 data-i18n="contact.info.whatsapp">WhatsApp</h4>
+                                    <a
+                                        href="https://wa.me/523344884616"
+                                        target="_blank"
+                                        data-i18n="contact.info.whatsapp-link"
+                                        >Envíanos un mensaje</a
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="contact-social">
+                                <h4 data-i18n="contact.info.follow">Síguenos</h4>
+                                <div class="social-links">
+                                    <a
+                                        href="https://www.linkedin.com/company/blackgreenstudio"
+                                        target="_blank"
+                                        rel="noopener"
+                                        aria-label="LinkedIn"
+                                        ><i class="icon-linkedin"></i
+                                    ></a>
+                                    <a
+                                        href="https://github.com/blackgreenstudio"
+                                        target="_blank"
+                                        rel="noopener"
+                                        aria-label="GitHub"
+                                        ><i class="icon-github"></i
+                                    ></a>
+                                    <a
+                                        href="https://twitter.com/blackgreenstudio"
+                                        target="_blank"
+                                        rel="noopener"
+                                        aria-label="Twitter"
+                                        ><i class="icon-twitter"></i
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--#include virtual="../partials/footer.html" -->
+
+        <!--#include virtual="../partials/scripts.html" -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var contactForm = document.getElementById('contactForm');
+                if (contactForm) {
+                    contactForm.addEventListener('submit', function (e) {
+                        e.preventDefault();
+                        var submitBtn = contactForm.querySelector('button[type="submit"]');
+                        submitBtn.disabled = true;
+                        var sendingText = i18n.translations['contact.form.sending'][i18n.currentLang];
+                        submitBtn.textContent = sendingText;
+
+                        var formData = new FormData(contactForm);
+                        var data = {
+                            name: formData.get('name'),
+                            email: formData.get('email'),
+                            service: formData.get('service'),
+                            message: formData.get('message')
+                        };
+
+                        fetch('https://formspree.io/f/YOUR_FORM_ID', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(data)
+                        })
+                            .then(function (response) {
+                                if (response.ok) {
+                                    var successTitle =
+                                        i18n.translations['contact.form.success-title'][i18n.currentLang];
+                                    var successText = i18n.translations['contact.form.success-text'][i18n.currentLang];
+                                    contactForm.innerHTML =
+                                        '<div class="success-message" style="text-align:center;padding:40px 0;"><h3>' +
+                                        successTitle +
+                                        '</h3><p>' +
+                                        successText +
+                                        '</p></div>';
+                                } else {
+                                    throw new Error('Error al enviar');
+                                }
+                            })
+                            .catch(function () {
+                                submitBtn.disabled = false;
+                                var submitText = i18n.translations['contact.form.submit'][i18n.currentLang];
+                                submitBtn.textContent = submitText;
+                                var errorText = i18n.translations['contact.form.error'][i18n.currentLang];
+                                alert(errorText);
+                            });
+                    });
+                }
+            });
+        </script>
+    </body>
+</html>

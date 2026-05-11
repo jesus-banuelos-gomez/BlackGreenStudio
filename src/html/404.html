@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es" data-lang="es">
+    <head>
+        <meta name="description" content="Página no encontrada - BlackGreenStudio" />
+        <title>404 - BlackGreenStudio</title>
+
+        <!--#include virtual="../partials/head.html" -->
+
+        <style>
+            .error-page {
+                min-height: 70vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 100px 20px;
+            }
+            .error-page h1 {
+                font-size: 6rem;
+                color: var(--green-primary);
+                margin-bottom: 0;
+            }
+            .error-page h2 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+            .error-page p {
+                color: var(--gray-medium);
+                margin-bottom: 2rem;
+                font-size: 1.1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <!--#include virtual="../partials/nav.html" -->
+
+        <section class="error-page">
+            <div class="container">
+                <h1>404</h1>
+                <h2 data-i18n="error.title">Página no encontrada</h2>
+                <p data-i18n="error.desc">
+                    La página que buscas no existe o ha sido movida.<br />Verifica la URL o vuelve al inicio.
+                </p>
+                <a href="index.html" class="btn btn-primary" data-i18n="error.cta">Volver al inicio</a>
+            </div>
+        </section>
+
+        <!--#include virtual="../partials/footer.html" -->
+
+        <!--#include virtual="../partials/scripts.html" -->
+    </body>
+</html>

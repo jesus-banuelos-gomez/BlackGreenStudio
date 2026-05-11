@@ -1,0 +1,41 @@
+<!-- Chat Widget -->
+<div class="chat-widget" id="chatWidget">
+    <button class="chat-toggle" id="chatToggle" aria-label="Abrir chat">
+        <svg
+            class="chat-toggle-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        >
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+        </svg>
+        <span class="chat-toggle-close">✕</span>
+    </button>
+
+    <div class="chat-panel" id="chatPanel">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <div class="chat-header-avatar">
+                    <img src="../Resource/logo.png" alt="BGS" />
+                </div>
+                <div>
+                    <div class="chat-header-title">BlackGreenStudio</div>
+                    <div class="chat-header-status" data-i18n="chat.online">En línea</div>
+                </div>
+            </div>
+            <button class="chat-header-close" id="chatClose" aria-label="Cerrar chat">✕</button>
+        </div>
+
+        <div class="chat-body">
+            <div class="chat-messages" id="chatMessages"></div>
+            <div class="chat-faq" id="chatFaq"></div>
+        </div>
+
+        <div class="chat-footer">
+            <span data-i18n="chat.footer">Respuestas rápidas — elige una pregunta</span>
+        </div>
+    </div>
+</div>

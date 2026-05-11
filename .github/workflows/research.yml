@@ -1,0 +1,33 @@
+name: Weekly Blog Research
+on:
+  schedule:
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  research_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: node scripts/research.js
+      - name: Commit updated blog posts
+        run: |
+          git config user.name "blackgreen-bot"
+          git config user.email "bot@blackgreenstudio.com"
+          git add src/js/blog-posts.json
+          git diff --cached --quiet || git commit -m "chore: weekly blog posts update"
+          git push
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_BLACKGREENSTUDIO }}
+          channelId: live
+          projectId: blackgreenstudio
