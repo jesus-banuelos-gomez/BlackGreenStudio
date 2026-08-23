@@ -72,11 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var summary = post.summary[lang] || post.summary.es;
 
         var bgColors = ['#4CAF50', '#2196F3', '#FF9800', '#9C27B0', '#00BCD4', '#E91E63'];
-        var colorIndex = 0;
-        for (var i = 0; i < (typeof blogPosts !== 'undefined' ? 100 : 0); i++) {
-            colorIndex = i;
-        }
-        colorIndex = (post.tags && post.tags.length > 0 ? post.tags[0].length : 0) % bgColors.length;
+        var colorIndex = (post.tags && post.tags.length > 0 ? post.tags[0].length : 0) % bgColors.length;
 
         var html = '';
         html += '<div class="article-image">';

@@ -75,6 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var chatClose = document.getElementById('chatClose');
     var chatMessages = document.getElementById('chatMessages');
     var chatFaq = document.getElementById('chatFaq');
+    var answerTimer = null;
 
     if (!chatToggle || !chatPanel) return;
 
@@ -117,6 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function showWelcome() {
+        clearAnswerTimer();
         chatMessages.innerHTML = '';
         addMessage(t('chat.welcome'), 'bot');
         renderFaqs();
@@ -129,11 +131,13 @@ document.addEventListener('DOMContentLoaded', function () {
         var item = list[index];
         if (!item) return;
 
+        clearAnswerTimer();
         chatFaq.innerHTML = '';
 
         addMessage(item.q, 'user');
 
-        setTimeout(function () {
+        answerTimer = setTimeout(function () {
+            answerTimer = null;
             addMessage(item.a, 'bot');
 
             var backBtn = document.createElement('button');
@@ -150,16 +154,30 @@ document.addEventListener('DOMContentLoaded', function () {
     function openChat() {
         chatPanel.classList.add('active');
         chatToggle.classList.add('active');
-        document.body.classList.add('no-scroll');
-        if (chatMessages.children.length === 0) {
-            showWelcome();
+        chatToggle.setAttribute('aria-label', 'Cerrar chat');
+        chatPanel.setAttribute('aria-hidden', 'false');
+        if (window.innerWidth <= 480) {
+            document.body.classList.add('no-scroll');
         }
+        showWelcome();
     }
 
     function closeChat() {
         chatPanel.classList.remove('active');
         chatToggle.classList.remove('active');
+        chatToggle.setAttribute('aria-label', 'Abrir chat');
+        chatPanel.setAttribute('aria-hidden', 'true');
         document.body.classList.remove('no-scroll');
+        clearAnswerTimer();
+        chatMessages.innerHTML = '';
+        chatFaq.innerHTML = '';
+    }
+
+    function clearAnswerTimer() {
+        if (answerTimer) {
+            clearTimeout(answerTimer);
+            answerTimer = null;
+        }
     }
 
     chatToggle.addEventListener('click', function () {

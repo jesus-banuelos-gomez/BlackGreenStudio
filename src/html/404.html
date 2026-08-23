@@ -2,7 +2,8 @@
 <html lang="es" data-lang="es">
     <head>
         <meta name="description" content="Página no encontrada - BlackGreenStudio" />
-        <title>404 - BlackGreenStudio</title>
+        <meta name="robots" content="noindex, nofollow" />
+        <title>Página no encontrada | BlackGreenStudio</title>
 
         <!--#include virtual="../partials/head.html" -->
 
@@ -16,9 +17,13 @@
                 padding: 100px 20px;
             }
             .error-page h1 {
-                font-size: 6rem;
+                font-size: clamp(5rem, 14vw, 8rem);
                 color: var(--green-primary);
                 margin-bottom: 0;
+                background: linear-gradient(135deg, var(--green-primary), var(--green-dark));
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
             }
             .error-page h2 {
                 font-size: 2rem;

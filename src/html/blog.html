@@ -1,14 +1,18 @@
 <!doctype html>
 <html lang="es" data-lang="es">
     <head>
-        <meta name="description" content="Blog de BlackGreenStudio: Tendencias tecnológicas, guías y casos de éxito" />
-        <title>BlackGreenStudio - Blog</title>
+        <meta
+            name="description"
+            content="Blog de BlackGreenStudio: tendencias tecnológicas, guías prácticas y casos reales de transformación digital."
+        />
+        <title>Blog | BlackGreenStudio - Innovación Tecnológica</title>
+        <link rel="canonical" href="https://blackgreenstudio.web.app/blog" />
 
         <!--#include virtual="../partials/head.html" -->
         <link rel="stylesheet" href="../css/blog.css" />
 
         <!-- Open Graph -->
-        <meta property="og:title" content="BlackGreenStudio - Blog de Innovación Tecnológica" />
+        <meta property="og:title" content="Blog | BlackGreenStudio - Innovación Tecnológica" />
         <meta
             property="og:description"
             content="Tendencias tecnológicas, guías prácticas y casos reales de transformación digital"
@@ -17,6 +21,15 @@
         <meta property="og:url" content="https://blackgreenstudio.web.app/blog" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="es_MX" />
+
+        <!-- Twitter Cards -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Blog | BlackGreenStudio - Innovación Tecnológica" />
+        <meta
+            name="twitter:description"
+            content="Tendencias tecnológicas, guías prácticas y casos reales de transformación digital"
+        />
+        <meta name="twitter:image" content="https://blackgreenstudio.web.app/Resource/logo.png" />
     </head>
     <body>
         <!--#include virtual="../partials/nav.html" -->
@@ -198,7 +211,10 @@
                         var sendingText = i18n.translations['blog.newsletter.sending'][i18n.currentLang];
                         btn.textContent = sendingText;
 
-                        fetch('https://formspree.io/f/YOUR_FORM_ID', {
+                        var config = window.BGS_CONFIG || {};
+                        var formId = config.formspreeId || 'TU_FORMSPREE_ID';
+
+                        fetch('https://formspree.io/f/' + formId, {
                             method: 'POST',
                             headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify({ email: input.value, _subject: 'Newsletter suscripción' })

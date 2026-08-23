@@ -1,45 +1,49 @@
 /* --- Estilos base del footer --- */
 .footer {
-    background-color: #4caf50; /* Color de fondo oscuro */
-    color: #ffffff; /* Color de texto claro */
-    padding: 3rem 0 0; /* Espaciado superior */
-    font-family: 'Arial', sans-serif; /* Fuente general */
+    background: linear-gradient(160deg, var(--green-dark) 0%, var(--green-primary) 100%);
+    color: #ffffff;
+    padding: 3.5rem 0 0;
+    font-family: var(--font-body);
 }
 
-.container {
+.footer .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 20px;
 }
 
 /* --- Grid de columnas --- */
 .footer-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
     margin-bottom: 2rem;
 }
 
 .footer-col {
-    padding: 0 1rem;
+    padding: 0 0.5rem;
 }
 
 /* --- Logo y descripción --- */
 .footer-col img {
     margin-bottom: 1rem;
-    filter: brightness(0) invert(1); /* Convierte el logo a blanco */
+    filter: brightness(0) invert(1);
+    height: 56px;
+    width: auto;
 }
 
 .footer-col p {
     line-height: 1.6;
-    opacity: 0.8;
+    opacity: 0.92;
+    font-size: 0.95rem;
 }
 
 /* --- Títulos de columnas --- */
 .footer-col h4 {
-    color: #ffffff; /* Amarillo destacado */
-    margin-bottom: 1.5rem;
-    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+    font-weight: 700;
     position: relative;
 }
 
@@ -48,9 +52,10 @@
     position: absolute;
     left: 0;
     bottom: -8px;
-    width: 50px;
-    height: 2px;
-    background-color: #ffffff;
+    width: 44px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.85);
 }
 
 /* --- Listas de enlaces --- */
@@ -60,39 +65,50 @@
 }
 
 .footer-col ul li {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.7rem;
 }
 
 .footer-col ul li a {
-    color: #bdc3c7;
+    color: #ffffff;
+    opacity: 0.9;
     text-decoration: none;
-    transition: color 0.3s;
+    transition:
+        opacity 0.2s ease,
+        padding-left 0.2s ease;
 }
 
 .footer-col ul li a:hover {
-    color: #00000091; /* Amarillo al hover */
-    padding-left: 5px; /* Efecto de desplazamiento */
+    opacity: 1;
+    padding-left: 6px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 /* --- Copyright --- */
 .footer-copyright {
     text-align: center;
-    padding: 1.5rem 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.655);
-    margin-top: 2rem;
+    padding: 1.4rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    margin-top: 1.5rem;
     font-size: 0.9rem;
-    opacity: 0.7;
+    opacity: 0.95;
 }
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
     .footer-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
     .footer-col {
-        margin-bottom: 2rem;
+        margin-bottom: 0.5rem;
         text-align: center;
+    }
+
+    .footer-col img {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .footer-col h4::after {

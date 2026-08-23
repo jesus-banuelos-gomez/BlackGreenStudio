@@ -3,22 +3,32 @@
     <head>
         <meta
             name="description"
-            content="Soluciones tecnológicas personalizadas: Desarrollo de software, aplicaciones móviles y consultoría en innovación digital"
+            content="BlackGreenStudio: desarrollo de software a medida, apps móviles, migración a la nube y consultoría IT. Impulsamos tu negocio con tecnología. Contáctanos."
         />
-        <title>BlackGreenStudio</title>
+        <title>BlackGreenStudio | Soluciones Tecnológicas y Desarrollo de Software</title>
+        <link rel="canonical" href="https://blackgreenstudio.web.app/" />
 
         <!--#include virtual="../partials/head.html" -->
 
         <!-- Open Graph -->
-        <meta property="og:title" content="BlackGreenStudio - Soluciones Tecnológicas" />
+        <meta property="og:title" content="BlackGreenStudio | Soluciones Tecnológicas" />
         <meta
             property="og:description"
-            content="Soluciones tecnológicas personalizadas: Desarrollo de software, aplicaciones móviles y consultoría en innovación digital"
+            content="BlackGreenStudio: desarrollo de software a medida, apps móviles, migración a la nube y consultoría IT. Impulsamos tu negocio con tecnología. Contáctanos."
         />
         <meta property="og:image" content="https://blackgreenstudio.web.app/Resource/logo.png" />
         <meta property="og:url" content="https://blackgreenstudio.web.app" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="es_MX" />
+
+        <!-- Twitter Cards -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="BlackGreenStudio | Soluciones Tecnológicas" />
+        <meta
+            name="twitter:description"
+            content="Desarrollo de software a medida, apps móviles, migración a la nube y consultoría IT. Impulsamos tu negocio con tecnología."
+        />
+        <meta name="twitter:image" content="https://blackgreenstudio.web.app/Resource/logo.png" />
 
         <!-- JSON-LD Structured Data -->
         <script type="application/ld+json">
@@ -28,7 +38,7 @@
                 "name": "BlackGreenStudio",
                 "url": "https://blackgreenstudio.web.app",
                 "logo": "https://blackgreenstudio.web.app/Resource/logo.png",
-                "description": "Soluciones tecnológicas personalizadas: Desarrollo de software, aplicaciones móviles y consultoría en innovación digital",
+                "description": "BlackGreenStudio: desarrollo de software a medida, apps móviles, migración a la nube y consultoría IT. Impulsamos tu negocio con tecnología.",
                 "contactPoint": {
                     "@type": "ContactPoint",
                     "telephone": "+52-33-4488-4616",
@@ -38,7 +48,23 @@
                 "address": {
                     "@type": "PostalAddress",
                     "addressCountry": "MX"
-                }
+                },
+                "sameAs": [
+                    "https://www.linkedin.com/company/blackgreenstudio",
+                    "https://github.com/blackgreenstudio",
+                    "https://twitter.com/blackgreenstudio"
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "BlackGreenStudio",
+                "alternateName": "BlackGreen Studio",
+                "url": "https://blackgreenstudio.web.app",
+                "description": "BlackGreenStudio: desarrollo de software a medida, apps móviles, migración a la nube y consultoría IT. Impulsamos tu negocio con tecnología.",
+                "inLanguage": "es"
             }
         </script>
     </head>
@@ -48,7 +74,8 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="container">
-                <div class="hero-content">
+                <div class="hero-content reveal">
+                    <span class="hero-eyebrow"><span class="dot"></span> BlackGreenStudio</span>
                     <h1 data-i18n="hero.title">Soluciones Tecnológicas que Impulsan tu Negocio</h1>
                     <p class="lead" data-i18n="hero.subtitle">
                         Desarrollamos software a medida para optimizar procesos, mejorar la experiencia de usuario y
@@ -63,8 +90,10 @@
                         >
                     </div>
                 </div>
-                <div class="hero-image">
-                    <img src="../Resource/logo.png" alt="Desarrollo de software" loading="lazy" width="150px" />
+                <div class="hero-image reveal">
+                    <div class="hero-logo-card">
+                        <img src="../Resource/logo.png" alt="BlackGreenStudio" width="220" />
+                    </div>
                 </div>
             </div>
         </section>
@@ -72,13 +101,13 @@
         <!-- Servicios -->
         <section id="servicios" class="services">
             <div class="container">
-                <h2 data-i18n="services.title">Nuestros Servicios</h2>
-                <p class="section-subtitle" data-i18n="services.subtitle">
+                <h2 class="reveal" data-i18n="services.title">Nuestros Servicios</h2>
+                <p class="section-subtitle reveal" data-i18n="services.subtitle">
                     Soluciones especializadas para cada necesidad
                 </p>
 
                 <div class="services-grid">
-                    <article class="service-card">
+                    <article class="service-card reveal">
                         <div class="service-icon">
                             <img
                                 src="../Resource/html_css_js_transparent.png"
@@ -99,7 +128,7 @@
                         </ul>
                     </article>
 
-                    <article class="service-card">
+                    <article class="service-card reveal">
                         <div class="service-icon">
                             <img
                                 src="../Resource/kotlin_swift_logos_transparent.png"
@@ -120,7 +149,7 @@
                         </ul>
                     </article>
 
-                    <article class="service-card">
+                    <article class="service-card reveal">
                         <div class="service-icon">
                             <img src="../Resource/logo.png" alt="Consultoría IT" />
                         </div>
@@ -137,7 +166,7 @@
                         </ul>
                     </article>
 
-                    <article class="service-card">
+                    <article class="service-card reveal">
                         <div class="service-icon">
                             <img src="../Resource/logo.png" alt="Migración a la Nube" />
                         </div>
@@ -154,7 +183,7 @@
                         </ul>
                     </article>
 
-                    <article class="service-card">
+                    <article class="service-card reveal">
                         <div class="service-icon">
                             <img src="../Resource/icono.jpg" alt="UI/UX Design" />
                         </div>
@@ -171,7 +200,7 @@
                         </ul>
                     </article>
 
-                    <article class="service-card">
+                    <article class="service-card reveal">
                         <div class="service-icon">
                             <img src="../Resource/logo.png" alt="SEO & Marketing Digital" />
                         </div>
@@ -194,8 +223,8 @@
         <!-- Proyectos Destacados -->
         <section id="proyectos" class="projects">
             <div class="container">
-                <h2 data-i18n="projects.title">Casos de Éxito</h2>
-                <p class="section-subtitle" data-i18n="projects.subtitle">
+                <h2 class="reveal" data-i18n="projects.title">Casos de Éxito</h2>
+                <p class="section-subtitle reveal" data-i18n="projects.subtitle">
                     Soluciones reales para clientes en múltiples industrias
                 </p>
 
@@ -203,13 +232,12 @@
                     <button class="carousel-btn prev" aria-label="Anterior">
                         <span>&#10094;</span>
                     </button>
-
                     <div class="projects-carousel">
                         <article class="project-card">
                             <div class="project-image">
                                 <img
                                     src="../Resource/invinitify.jpg"
-                                    alt="App de invitaciones digitales"
+                                    alt="Invitify - App de invitaciones digitales"
                                     loading="lazy"
                                 />
                             </div>
@@ -226,7 +254,12 @@
                                     <span>Firebase</span>
                                     <span>Node.js</span>
                                 </div>
-                                <a href="#" class="btn btn-outline" data-i18n="projects.case-study"
+                                <a
+                                    href="https://wa.me/523344884616?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20el%20caso%20de%20%C3%A9xito%20Invitify"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="btn btn-outline"
+                                    data-i18n="projects.case-study"
                                     >Ver estudio de caso</a
                                 >
                             </div>
@@ -234,11 +267,11 @@
 
                         <article class="project-card">
                             <div class="project-image">
-                                <img src="../Resource/hydronexus.jpeg" alt="App gestion de negocio" loading="lazy" />
+                                <img src="../Resource/hydronexus.jpeg" alt="HidroNexus - Gestión de negocio" loading="lazy" />
                             </div>
                             <div class="project-details">
                                 <h3>HidroNexus</h3>
-                                <p>Plataforma web + móvil para negocios de auto lavado gestion de tiempos.</p>
+                                <p>Plataforma web + móvil para negocios de auto lavado, gestión de tiempos y clientes.</p>
                                 <ul class="service-features">
                                     <li>Reducir esperas</li>
                                     <li>Mejorar la experiencia del cliente</li>
@@ -250,7 +283,12 @@
                                     <span>Firebase</span>
                                     <span>Node.js</span>
                                 </div>
-                                <a href="#" class="btn btn-outline" data-i18n="projects.case-study"
+                                <a
+                                    href="https://wa.me/523344884616?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20el%20caso%20de%20%C3%A9xito%20HidroNexus"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="btn btn-outline"
+                                    data-i18n="projects.case-study"
                                     >Ver estudio de caso</a
                                 >
                             </div>
@@ -258,20 +296,29 @@
 
                         <article class="project-card">
                             <div class="project-image">
-                                <img src="../Resource/ghostfit_nexus.jpeg" alt="App Asistente Virtual" loading="lazy" />
+                                <img
+                                    src="../Resource/ghostfit_nexus.jpeg"
+                                    alt="Ghostfit Nexus - Asistente virtual de salud y productividad"
+                                    loading="lazy"
+                                />
                             </div>
                             <div class="project-details">
                                 <h3>Ghostfit Nexus</h3>
                                 <p>
-                                    Plataforma web y móvil. Asistente virtual con mejoras en Tiempos, Productividad,
-                                    Salud y Economicas.
+                                    Asistente virtual web y móvil que mejora tiempos, productividad y salud de los
+                                    usuarios con datos inteligentes.
                                 </p>
                                 <div class="project-tech">
                                     <span>Flutter</span>
                                     <span>Firebase</span>
                                     <span>Node.js</span>
                                 </div>
-                                <a href="#" class="btn btn-outline" data-i18n="projects.case-study"
+                                <a
+                                    href="https://wa.me/523344884616?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20el%20caso%20de%20%C3%A9xito%20Ghostfit%20Nexus"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="btn btn-outline"
+                                    data-i18n="projects.case-study"
                                     >Ver estudio de caso</a
                                 >
                             </div>
@@ -279,20 +326,25 @@
 
                         <article class="project-card">
                             <div class="project-image">
-                                <img src="../Resource/PopGo.jpg" alt="App Asistente Virtual" loading="lazy" />
+                                <img src="../Resource/PopGo.jpg" alt="Pop&amp;Go - Plataforma de consumo" loading="lazy" />
                             </div>
                             <div class="project-details">
                                 <h3>Pop&Go</h3>
                                 <p>
-                                    Plataforma web y móvil. Asistente virtual con mejoras en Tiempos, Productividad,
-                                    Salud y Economicas.
+                                    Plataforma web y móvil que conecta a los usuarios con ofertas de consumo, agilizando
+                                    tiempos y mejorando la experiencia.
                                 </p>
                                 <div class="project-tech">
                                     <span>Flutter</span>
                                     <span>Firebase</span>
                                     <span>Node.js</span>
                                 </div>
-                                <a href="#" class="btn btn-outline" data-i18n="projects.case-study"
+                                <a
+                                    href="https://wa.me/523344884616?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20el%20caso%20de%20%C3%A9xito%20Pop%26Go"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="btn btn-outline"
+                                    data-i18n="projects.case-study"
                                     >Ver estudio de caso</a
                                 >
                             </div>
@@ -311,7 +363,7 @@
         <!-- Sobre Nosotros -->
         <section id="nosotros" class="about">
             <div class="container">
-                <div class="about-content">
+                <div class="about-content reveal">
                     <h2 data-i18n="about.title">Expertos en Transformación Digital</h2>
                     <p data-i18n="about.desc">
                         Con más de 2 años en el mercado, hemos ayudado a +20 empresas a alcanzar sus objetivos
@@ -327,30 +379,40 @@
                             <span class="stat-label" data-i18n="about.stats.satisfaction">Clientes Satisfechos</span>
                         </div>
                     </div>
-                    <br />
-                    <h3 data-i18n="about.mission.title">Misión</h3>
-                    <p data-i18n="about.mission.text">
-                        "Diseñar soluciones de software disruptivas y accesibles que revolucionen la productividad,
-                        eficiencia y crecimiento sostenible de empresas y comunidades. Combinando tecnologías de
-                        vanguardia (web, móvil e inteligencia artificial), reimaginamos procesos críticos en sectores
-                        como salud, finanzas y gestión laboral, con un compromiso inquebrantable con la ética, la
-                        inclusión y la minimización del impacto ambiental. Nuestro enfoque centrado en el ser humano y
-                        la adaptabilidad garantiza que cada cliente transforme sus desafíos en ventajas competitivas."
-                    </p>
+                    <div class="about-mv">
+                        <h3 data-i18n="about.mission.title">Misión</h3>
+                        <p data-i18n="about.mission.text">
+                            "Diseñar soluciones de software disruptivas y accesibles que revolucionen la
+                            productividad, eficiencia y crecimiento sostenible de empresas y comunidades. Combinando
+                            tecnologías de vanguardia (web, móvil e inteligencia artificial), reimaginamos procesos
+                            críticos en sectores como salud, finanzas y gestión laboral, con un compromiso
+                            inquebrantable con la ética, la inclusión y la minimización del impacto ambiental. Nuestro
+                            enfoque centrado en el ser humano y la adaptabilidad garantiza que cada cliente transforme
+                            sus desafíos en ventajas competitivas."
+                        </p>
+                    </div>
+                    <div class="about-mv">
+                        <h3 data-i18n="about.vision.title">Visión</h3>
+                        <p data-i18n="about.vision.text">
+                            "Liderar la revolución digital para 2030 como referentes en innovación tecnológica, siendo
+                            el catalizador que conecta a las empresas con la excelencia operativa mediante herramientas
+                            escalables e inteligentes. Visualizamos un ecosistema donde toda organización
+                            —independientemente de su tamaño— pueda optimizar su desempeño, democratizar oportunidades
+                            y operar con sostenibilidad, impulsando economías más equitativas y sociedades digitalmente
+                            empoderadas."
+                        </p>
+                    </div>
 
-                    <h3 data-i18n="about.vision.title">Visión</h3>
-                    <p data-i18n="about.vision.text">
-                        "Liderar la revolución digital para 2030 como referentes en innovación tecnológica, siendo el
-                        catalizador que conecta a las empresas con la excelencia operativa mediante herramientas
-                        escalables e inteligentes. Visualizamos un ecosistema donde toda organización
-                        —independientemente de su tamaño— pueda optimizar su desempeño, democratizar oportunidades y
-                        operar con sostenibilidad, impulsando economías más equitativas y sociedades digitalmente
-                        empoderadas."
-                    </p>
-
-                    <a href="#" class="btn btn-primary" data-i18n="about.team-cta">Conoce nuestro equipo</a>
+                    <a
+                        href="https://wa.me/523344884616"
+                        target="_blank"
+                        rel="noopener"
+                        class="btn btn-primary"
+                        data-i18n="about.team-cta"
+                        >Conoce nuestro equipo</a
+                    >
                 </div>
-                <div class="about-image">
+                <div class="about-image reveal">
                     <img src="../Resource/icono.jpg" alt="Equipo BlackGreenStudio" loading="lazy" />
                 </div>
             </div>
@@ -359,7 +421,7 @@
         <!-- Contacto -->
         <section id="contacto" class="contact">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header reveal">
                     <h2 data-i18n="contact.title">¿Listo para Transformar tu Negocio?</h2>
                     <p class="section-subtitle" data-i18n="contact.subtitle">
                         Contáctanos y descubre cómo podemos ayudarte
@@ -367,7 +429,7 @@
                 </div>
 
                 <div class="contact-grid">
-                    <div class="contact-form-container">
+                    <div class="contact-form-container reveal">
                         <form id="contactForm" class="contact-form">
                             <div class="form-group">
                                 <label for="name" data-i18n="contact.form.name">Nombre Completo</label>
@@ -430,12 +492,16 @@
                         </form>
                     </div>
 
-                    <div class="contact-info">
+                    <div class="contact-info reveal">
                         <div class="contact-card">
                             <h3 data-i18n="contact.info.title">Información de Contacto</h3>
 
                             <div class="contact-method">
-                                <div class="contact-icon"><i class="icon-phone"></i></div>
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+                                    </svg>
+                                </div>
                                 <div class="contact-details">
                                     <h4 data-i18n="contact.info.phone">Teléfono</h4>
                                     <a href="tel:+523344884616">+52 33 4488 4616</a>
@@ -443,7 +509,12 @@
                             </div>
 
                             <div class="contact-method">
-                                <div class="contact-icon"><i class="icon-email"></i></div>
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                        <polyline points="22,6 12,13 2,6" />
+                                    </svg>
+                                </div>
                                 <div class="contact-details">
                                     <h4 data-i18n="contact.info.email-label">Email</h4>
                                     <a href="mailto:blackgreenstudiomx@gmail.com">blackgreenstudiomx@gmail.com</a>
@@ -451,7 +522,11 @@
                             </div>
 
                             <div class="contact-method">
-                                <div class="contact-icon"><i class="icon-whatsapp"></i></div>
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                                    </svg>
+                                </div>
                                 <div class="contact-details">
                                     <h4 data-i18n="contact.info.whatsapp">WhatsApp</h4>
                                     <a
@@ -471,22 +546,30 @@
                                         target="_blank"
                                         rel="noopener"
                                         aria-label="LinkedIn"
-                                        ><i class="icon-linkedin"></i
-                                    ></a>
+                                        ><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V9h4v1.5A6 6 0 0 1 16 8z" />
+                                            <rect x="2" y="9" width="4" height="12" />
+                                            <circle cx="4" cy="4" r="2" />
+                                        </svg></a
+                                    >
                                     <a
                                         href="https://github.com/blackgreenstudio"
                                         target="_blank"
                                         rel="noopener"
                                         aria-label="GitHub"
-                                        ><i class="icon-github"></i
-                                    ></a>
+                                        ><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                                            <path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.19-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.92.85.09-.66.35-1.12.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49A10.25 10.25 0 0 0 22 12.25C22 6.58 17.52 2 12 2z" />
+                                        </svg></a
+                                    >
                                     <a
                                         href="https://twitter.com/blackgreenstudio"
                                         target="_blank"
                                         rel="noopener"
                                         aria-label="Twitter"
-                                        ><i class="icon-twitter"></i
-                                    ></a>
+                                        ><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                                            <path d="M23 4.01a9.42 9.42 0 0 1-2.7 1.13 4.66 4.66 0 0 0-8.05 3.19 3.3 3.3 0 0 0 .12 1.06A13.22 13.22 0 0 1 1.67 2.63a4.67 4.67 0 0 0 1.44 6.22 4.6 4.6 0 0 1-2.11-.58v.06a4.66 4.66 0 0 0 3.74 4.57 4.68 4.68 0 0 1-2.11.08 4.66 4.66 0 0 0 4.35 3.24A9.35 9.35 0 0 1 .5 17.76a13.19 13.19 0 0 0 7.14 2.09c8.57 0 13.25-7.1 13.25-13.25 0-.2 0-.4-.02-.6A9.46 9.46 0 0 0 23 4.01z" />
+                                        </svg></a
+                                    >
                                 </div>
                             </div>
                         </div>
@@ -517,7 +600,7 @@
                             message: formData.get('message')
                         };
 
-                        fetch('https://formspree.io/f/YOUR_FORM_ID', {
+                        fetch('https://formspree.io/f/' + window.BGS_CONFIG.formspreeId, {
                             method: 'POST',
                             headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify(data)

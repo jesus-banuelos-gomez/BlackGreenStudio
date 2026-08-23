@@ -167,6 +167,7 @@ var i18n = {
             en: 'Driving businesses with technology since 2023.'
         },
         'footer.services-title': { es: 'Servicios', en: 'Services' },
+        'footer.contact-title': { es: 'Contacto', en: 'Contact' },
         'footer.services.custom': { es: 'Desarrollo a la medida', en: 'Custom Development' },
         'footer.services.cloud': { es: 'Migración a la Nube', en: 'Cloud Migration' },
         'footer.services.seo': { es: 'Optimización SEO', en: 'SEO Optimization' },

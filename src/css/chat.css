@@ -160,7 +160,8 @@
 }
 
 .chat-messages {
-    flex: 1;
+    flex: 1 1 auto;
+    min-height: 140px;
     overflow-y: auto;
     padding: 16px 16px 8px;
     display: flex;
@@ -205,17 +206,32 @@
 
 /* FAQ */
 .chat-faq {
-    padding: 8px 16px 16px;
+    padding: 8px 16px 14px;
     display: flex;
     flex-direction: column;
     gap: 8px;
     flex-shrink: 0;
+    overflow-y: auto;
+    max-height: 46%;
+}
+
+.chat-faq::-webkit-scrollbar {
+    width: 4px;
+}
+
+.chat-faq::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.chat-faq::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .faq-btn {
     display: block;
     width: 100%;
-    padding: 11px 16px;
+    padding: 10px 16px;
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 10px;
