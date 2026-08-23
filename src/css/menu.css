@@ -13,8 +13,8 @@
     display: none;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     background: none;
     border: none;
     color: var(--gray-dark);
@@ -31,6 +31,12 @@
     background: rgba(0, 0, 0, 0.05);
 }
 
+@media (hover: none) {
+    .menu-toggle:hover {
+        background: none;
+    }
+}
+
 /* Backdrop del menú móvil */
 .menu-backdrop {
     position: fixed;
@@ -39,7 +45,7 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
-    z-index: 998;
+    z-index: 1080;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.35s ease;
@@ -77,10 +83,11 @@
         flex-direction: column;
         align-items: stretch;
         padding: 0;
+        padding-bottom: env(safe-area-inset-bottom, 0px);
         gap: 0;
         transform: translateX(100%);
         transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-        z-index: 999;
+        z-index: 1100;
         overflow-y: auto;
         box-shadow: -8px 0 32px rgba(0, 0, 0, 0.4);
     }
@@ -155,12 +162,14 @@
         border-radius: 0;
     }
 
+@media (hover: hover) {
     .nav-links a:not(.btn):hover {
         color: #ffffff;
         background: rgba(255, 255, 255, 0.04);
         border-left-color: rgba(76, 175, 80, 0.3);
         padding-left: 27px;
     }
+}
 
     .nav-links a:not(.btn).active {
         color: #ffffff;

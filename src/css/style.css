@@ -43,6 +43,8 @@
 
 html {
     scroll-behavior: smooth;
+    /* Compensa el header sticky al navegar con anclas (#servicios, #contacto...) */
+    scroll-padding-top: 84px;
 }
 
 body {
@@ -147,8 +149,13 @@ h3 {
 .btn-primary:hover {
     background-color: var(--green-dark);
     border-color: var(--green-dark);
-    transform: translateY(-2px);
     box-shadow: 0 10px 22px rgba(76, 175, 80, 0.35);
+}
+
+@media (hover: hover) {
+    .btn-primary:hover {
+        transform: translateY(-2px);
+    }
 }
 
 .btn-secondary {
@@ -161,7 +168,12 @@ h3 {
     background-color: var(--green-lighter);
     border-color: var(--green-dark);
     color: var(--green-darker);
-    transform: translateY(-2px);
+}
+
+@media (hover: hover) {
+    .btn-secondary:hover {
+        transform: translateY(-2px);
+    }
 }
 
 .btn-outline {
@@ -178,8 +190,13 @@ h3 {
 .btn-outline:hover {
     background-color: var(--green-primary);
     color: var(--white);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-green);
+}
+
+@media (hover: hover) {
+    .btn-outline:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-green);
+    }
 }
 
 .btn-block {
@@ -457,14 +474,16 @@ h3 {
     transition: opacity var(--transition);
 }
 
-.service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-green);
-    border-color: var(--green-light);
-}
+@media (hover: hover) {
+    .service-card:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--shadow-green);
+        border-color: var(--green-light);
+    }
 
-.service-card:hover::before {
-    opacity: 1;
+    .service-card:hover::before {
+        opacity: 1;
+    }
 }
 
 .service-icon {
@@ -479,8 +498,10 @@ h3 {
     transition: transform var(--transition);
 }
 
-.service-card:hover .service-icon {
-    transform: scale(1.06) rotate(-3deg);
+@media (hover: hover) {
+    .service-card:hover .service-icon {
+        transform: scale(1.06) rotate(-3deg);
+    }
 }
 
 .service-icon img {
@@ -682,6 +703,39 @@ h3 {
 
     .hero-logo-card img {
         width: 160px;
+    }
+}
+
+/* 📱 Nav compacto para tablets chicas y móviles apaisados */
+@media (min-width: 769px) and (max-width: 900px) {
+    .logo-text {
+        display: none;
+    }
+
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .nav-links {
+        gap: 0;
+    }
+
+    .nav-links a:not(.btn) {
+        padding: 8px 9px;
+        font-size: 0.85rem;
+    }
+
+    .nav-links .btn {
+        margin-left: 2px;
+        padding: 8px 14px;
+    }
+
+    .lang-item {
+        margin-left: 2px;
+    }
+
+    .lang-btn {
+        padding: 4px 8px;
     }
 }
 

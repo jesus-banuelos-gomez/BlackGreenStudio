@@ -9,24 +9,34 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let currentIndex = 0;
 
-    function calculateCardWidth() {
-        const firstCard = cards[0];
-        const gap = parseInt(window.getComputedStyle(carousel).gap) || 30;
-        return firstCard.offsetWidth + gap;
+    /* Posición de cada tarjeta relativa a la primera (funciona con
+       cualquier ancho, gap o scroll-snap en desktop y móvil). */
+    function cardOffset(i) {
+        return cards[i].offsetLeft - cards[0].offsetLeft;
     }
 
-    let cardWidth = calculateCardWidth();
+    function getIndexFromScroll() {
+        var x = carousel.scrollLeft;
+        var best = 0;
+        var bestDist = Infinity;
+        for (var i = 0; i < cards.length; i++) {
+            var d = Math.abs(cardOffset(i) - x);
+            if (d < bestDist) {
+                bestDist = d;
+                best = i;
+            }
+        }
+        return best;
+    }
 
     window.addEventListener('resize', function () {
-        cardWidth = calculateCardWidth();
-        goToSlide(currentIndex);
+        carousel.scrollLeft = cardOffset(currentIndex);
     });
 
     function goToSlide(index) {
         currentIndex = Math.max(0, Math.min(index, cards.length - 1));
-        const scrollAmount = currentIndex * cardWidth;
         carousel.scrollTo({
-            left: scrollAmount,
+            left: cardOffset(currentIndex),
             behavior: 'smooth'
         });
         updateDots();
@@ -62,8 +72,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (dotsContainer) {
         cards.forEach(function (_, i) {
-            const dot = document.createElement('span');
+            const dot = document.createElement('button');
+            dot.type = 'button';
             dot.classList.add('carousel-dot');
+            dot.setAttribute('aria-label', 'Ir al proyecto ' + (i + 1));
             if (i === 0) dot.classList.add('active');
             dot.addEventListener('click', function () {
                 goToSlide(i);
@@ -73,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     carousel.addEventListener('scroll', function () {
-        const newIndex = Math.round(carousel.scrollLeft / cardWidth);
+        var newIndex = getIndexFromScroll();
         if (newIndex !== currentIndex && newIndex >= 0 && newIndex < cards.length) {
             currentIndex = newIndex;
             updateDots();

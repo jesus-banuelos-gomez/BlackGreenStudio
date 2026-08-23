@@ -131,7 +131,17 @@
 .contact-method:hover .contact-icon {
     background: linear-gradient(135deg, var(--green-primary), var(--green-dark));
     color: var(--white);
-    transform: scale(1.06);
+}
+
+@media (hover: hover) {
+    .contact-method:hover .contact-icon {
+        transform: scale(1.06);
+    }
+
+    .social-links a:hover {
+        transform: translateY(-3px);
+        box-shadow: var(--shadow-green);
+    }
 }
 
 .contact-icon svg {
@@ -186,8 +196,6 @@
 .social-links a:hover {
     background-color: var(--green-primary);
     color: var(--white);
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-green);
 }
 
 .social-links svg {

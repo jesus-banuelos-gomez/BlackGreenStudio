@@ -157,7 +157,8 @@ document.addEventListener('DOMContentLoaded', function () {
         chatToggle.setAttribute('aria-label', 'Cerrar chat');
         chatPanel.setAttribute('aria-hidden', 'false');
         if (window.innerWidth <= 480) {
-            document.body.classList.add('no-scroll');
+            if (window.bgsScrollLock) window.bgsScrollLock.acquire();
+            else document.body.classList.add('no-scroll');
         }
         showWelcome();
     }
@@ -167,6 +168,7 @@ document.addEventListener('DOMContentLoaded', function () {
         chatToggle.classList.remove('active');
         chatToggle.setAttribute('aria-label', 'Abrir chat');
         chatPanel.setAttribute('aria-hidden', 'true');
+        if (window.bgsScrollLock) window.bgsScrollLock.release();
         document.body.classList.remove('no-scroll');
         clearAnswerTimer();
         chatMessages.innerHTML = '';

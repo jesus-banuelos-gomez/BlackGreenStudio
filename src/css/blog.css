@@ -129,8 +129,17 @@
 }
 
 .blog-card:hover {
-    transform: translateY(-6px);
     box-shadow: var(--shadow-lg);
+}
+
+@media (hover: hover) {
+    .blog-card:hover {
+        transform: translateY(-6px);
+    }
+
+    .blog-card:hover .article-image img {
+        transform: scale(1.05);
+    }
 }
 
 .article-image {
@@ -143,10 +152,6 @@
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s;
-}
-
-.blog-card:hover .article-image img {
-    transform: scale(1.05);
 }
 
 .article-content {

@@ -216,7 +216,12 @@ var i18n = {
     },
 
     init: function () {
-        var saved = localStorage.getItem('lang');
+        var saved = null;
+        try {
+            saved = localStorage.getItem('lang');
+        } catch (e) {
+            /* almacenamiento bloqueado (modo privado/cookies estrictas): usar 'es' */
+        }
         if (saved === 'en' || saved === 'es') {
             this.currentLang = saved;
         }
@@ -233,7 +238,11 @@ var i18n = {
 
     setLang: function (lang) {
         this.currentLang = lang;
-        localStorage.setItem('lang', lang);
+        try {
+            localStorage.setItem('lang', lang);
+        } catch (e) {
+            /* sin persistencia disponible: aplicar solo en memoria */
+        }
         document.documentElement.lang = lang;
         document.querySelectorAll('.lang-option').forEach(function (btn) {
             if (btn.getAttribute('data-lang') === lang) {
