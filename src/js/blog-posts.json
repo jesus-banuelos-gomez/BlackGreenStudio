@@ -1,5 +1,72 @@
 [
     {
+        "id": "tech-weekly-35-2026",
+        "date": "2026-08-24",
+        "title": {
+            "es": "Tech Weekly #35: Everything I own, owned",
+            "en": "Tech Weekly #35: Everything I own, owned"
+        },
+        "category": {
+            "es": "Tecnologías",
+            "en": "Technologies"
+        },
+        "summary": {
+            "es": "Esta semana el mundo tecnológico trae novedades importantes en everything, owned. Destacamos 1 historia clave que están marcando tendencia en la industria.",
+            "en": "This week brings important tech news in everything, owned. We highlight 1 key story that are setting trends in the industry."
+        },
+        "content": {
+            "es": [
+                "El ecosistema tecnológico no se detiene. Cada semana surgen innovaciones, lanzamientos y descubrimientos que transforman la manera en que vivimos y trabajamos. En BlackGreenStudio te traemos un resumen con lo más relevante.",
+                "A continuación, las historias más destacadas de esta semana:",
+                "**Everything I own, owned**",
+                "<a href=\"https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20260823225933&#x2F;https:&#x2F;&#x2F;schlarp.com&#x2F;posts&#x2F;everything-i-own-owned&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;web.archive.or...",
+                "Fuente: [schlarp.com](https://schlarp.com/posts/everything-i-own-owned/)",
+                "En BlackGreenStudio seguimos de cerca estas tendencias para ofrecerte soluciones tecnológicas de vanguardia. ¡Mantente al tanto la próxima semana!"
+            ],
+            "en": [
+                "The tech ecosystem never stops. Every week brings innovations, launches, and discoveries that transform how we live and work. At BlackGreenStudio, we bring you a roundup of the most relevant news.",
+                "Below are the top stories of this week:",
+                "**Everything I own, owned**",
+                "<a href=\"https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20260823225933&#x2F;https:&#x2F;&#x2F;schlarp.com&#x2F;posts&#x2F;everything-i-own-owned&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;web.archive.or...",
+                "Source: [schlarp.com](https://schlarp.com/posts/everything-i-own-owned/)",
+                "At BlackGreenStudio we closely follow these trends to offer you cutting-edge technology solutions. Stay tuned for next week!"
+            ]
+        },
+        "image": "../Resource/blog/default-post.svg",
+        "verified": false,
+        "sources": [
+            {
+                "name": "HackerNews",
+                "url": "https://schlarp.com/posts/everything-i-own-owned/",
+                "title": "Everything I own, owned"
+            },
+            {
+                "name": "HackerNews",
+                "url": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
+                "title": "Anthropic's best AI model struggles to attract users as cheaper tools thrive"
+            },
+            {
+                "name": "HackerNews",
+                "url": "https://earendil.com/posts/what-is-a-harness/",
+                "title": "What Is a Harness?"
+            },
+            {
+                "name": "HackerNews",
+                "url": "https://lalitm.com/post/find-problems-staff-engineer/",
+                "title": "How I find problems to solve as a staff engineer"
+            },
+            {
+                "name": "HackerNews",
+                "url": "https://debloat.dev/",
+                "title": "A website for debloated open source alternatives"
+            }
+        ],
+        "tags": [
+            "everything",
+            "owned"
+        ]
+    },
+    {
         "id": "tech-weekly-20-2026",
         "date": "2026-05-11",
         "title": {
