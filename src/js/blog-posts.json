@@ -1,5 +1,83 @@
 [
     {
+        "id": "tech-weekly-36-2026",
+        "date": "2026-08-31",
+        "title": {
+            "es": "Tech Weekly #36: Breaking Claude Code Opus 5 Auto Mode",
+            "en": "Tech Weekly #36: Breaking Claude Code Opus 5 Auto Mode"
+        },
+        "category": {
+            "es": "Tecnologías",
+            "en": "Technologies"
+        },
+        "summary": {
+            "es": "Esta semana el mundo tecnológico trae novedades importantes en breaking, claude, code. Destacamos 3 historias clave que están marcando tendencia en la industria.",
+            "en": "This week brings important tech news in breaking, claude, code. We highlight 3 key stories that are setting trends in the industry."
+        },
+        "content": {
+            "es": [
+                "El ecosistema tecnológico no se detiene. Cada semana surgen innovaciones, lanzamientos y descubrimientos que transforman la manera en que vivimos y trabajamos. En BlackGreenStudio te traemos un resumen con lo más relevante.",
+                "A continuación, las historias más destacadas de esta semana:",
+                "**Breaking Claude Code Opus 5 Auto Mode**",
+                "Fuente: [embracethered.com](https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/)",
+                "**How to Use Claude Code for Free in 2026: OpenRouter Free Models, Ollama & Free GPU Credits**",
+                "How to Use Claude Code for Free in 2026: OpenRouter Free Models, Ollama &amp; Free GPU...",
+                "Fuente: [dev.to](https://dev.to/robertadam987_/how-to-use-claude-code-for-free-in-2026-openrouter-free-models-ollama-free-gpu-credits-39m3)",
+                "**g5g vs g6 for LLM Serving: the Same Code, and 3.7x the Throughput**",
+                "Serving Gemma 4 E2B in pure JAX on AWS g5g.2xlarge and g6.2xlarge with a byte-identical payload. The older instance loses 87% of decode to dtype conversion, and nothing in the logs says so.",
+                "Fuente: [dev.to](https://dev.to/aws-builders/g5g-vs-g6-for-llm-serving-the-same-code-and-37x-the-throughput-5a39)",
+                "En BlackGreenStudio seguimos de cerca estas tendencias para ofrecerte soluciones tecnológicas de vanguardia. ¡Mantente al tanto la próxima semana!"
+            ],
+            "en": [
+                "The tech ecosystem never stops. Every week brings innovations, launches, and discoveries that transform how we live and work. At BlackGreenStudio, we bring you a roundup of the most relevant news.",
+                "Below are the top stories of this week:",
+                "**Breaking Claude Code Opus 5 Auto Mode**",
+                "Source: [embracethered.com](https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/)",
+                "**How to Use Claude Code for Free in 2026: OpenRouter Free Models, Ollama & Free GPU Credits**",
+                "How to Use Claude Code for Free in 2026: OpenRouter Free Models, Ollama &amp; Free GPU...",
+                "Source: [dev.to](https://dev.to/robertadam987_/how-to-use-claude-code-for-free-in-2026-openrouter-free-models-ollama-free-gpu-credits-39m3)",
+                "**g5g vs g6 for LLM Serving: the Same Code, and 3.7x the Throughput**",
+                "Serving Gemma 4 E2B in pure JAX on AWS g5g.2xlarge and g6.2xlarge with a byte-identical payload. The older instance loses 87% of decode to dtype conversion, and nothing in the logs says so.",
+                "Source: [dev.to](https://dev.to/aws-builders/g5g-vs-g6-for-llm-serving-the-same-code-and-37x-the-throughput-5a39)",
+                "At BlackGreenStudio we closely follow these trends to offer you cutting-edge technology solutions. Stay tuned for next week!"
+            ]
+        },
+        "image": "../Resource/blog/default-post.svg",
+        "verified": true,
+        "sources": [
+            {
+                "name": "HackerNews",
+                "url": "https://unsung.aresluna.org/i-just-chose-words-carefully/",
+                "title": "“I just chose words carefully”"
+            },
+            {
+                "name": "HackerNews",
+                "url": "https://www.openshot.org/blog/2026/08/30/openshot-40-record-edit-color-like-never-before/",
+                "title": "OpenShot 4.0: Record, Edit, and Color Like Never Before"
+            },
+            {
+                "name": "HackerNews",
+                "url": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/",
+                "title": "Breaking Claude Code Opus 5 Auto Mode"
+            },
+            {
+                "name": "HackerNews",
+                "url": "https://sandyuraz.com/blogs/tiny-cafe/",
+                "title": "My hobby of building miniatures and taking pretty pictures"
+            },
+            {
+                "name": "HackerNews",
+                "url": "https://ruurtjan.com/articles/p99-0ms-autocomplete-for-240-million-domain-names",
+                "title": "P99 0 ms* autocomplete for 240M domain names"
+            }
+        ],
+        "tags": [
+            "chose",
+            "words",
+            "carefully"
+        ]
+    },
+    {
         "id": "tech-weekly-35-2026",
         "date": "2026-08-24",
         "title": {
