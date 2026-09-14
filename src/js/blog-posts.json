@@ -1,5 +1,73 @@
 [
     {
+        "id": "tech-weekly-38-2026",
+        "date": "2026-09-14",
+        "title": {
+            "es": "Tech Weekly #38: Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher",
+            "en": "Tech Weekly #38: Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher"
+        },
+        "category": {
+            "es": "Tecnologías",
+            "en": "Technologies"
+        },
+        "summary": {
+            "es": "Esta semana el mundo tecnológico trae novedades importantes en fable, solves, cyphral. Destacamos 1 historia clave que están marcando tendencia en la industria.",
+            "en": "This week brings important tech news in fable, solves, cyphral. We highlight 1 key story that are setting trends in the industry."
+        },
+        "content": {
+            "es": [
+                "El ecosistema tecnológico no se detiene. Cada semana surgen innovaciones, lanzamientos y descubrimientos que transforman la manera en que vivimos y trabajamos. En BlackGreenStudio te traemos un resumen con lo más relevante.",
+                "A continuación, las historias más destacadas de esta semana:",
+                "**Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher**",
+                "Fuente: [www.vals.ai](https://www.vals.ai/blogs/fable-solves-cyphral-distich)",
+                "En BlackGreenStudio seguimos de cerca estas tendencias para ofrecerte soluciones tecnológicas de vanguardia. ¡Mantente al tanto la próxima semana!"
+            ],
+            "en": [
+                "The tech ecosystem never stops. Every week brings innovations, launches, and discoveries that transform how we live and work. At BlackGreenStudio, we bring you a roundup of the most relevant news.",
+                "Below are the top stories of this week:",
+                "**Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher**",
+                "Source: [www.vals.ai](https://www.vals.ai/blogs/fable-solves-cyphral-distich)",
+                "At BlackGreenStudio we closely follow these trends to offer you cutting-edge technology solutions. Stay tuned for next week!"
+            ]
+        },
+        "image": "../Resource/blog/default-post.svg",
+        "verified": false,
+        "sources": [
+            {
+                "name": "HackerNews",
+                "url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
+                "title": "Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher"
+            },
+            {
+                "name": "HackerNews",
+                "url": "https://developer.apple.com/accessories/dimensional-drawings/",
+                "title": "Apple's Dimensional Drawings"
+            },
+            {
+                "name": "HackerNews",
+                "url": "https://spaceships.treybastian.com/",
+                "title": "Spaceships (Reverse Asteroid)"
+            },
+            {
+                "name": "HackerNews",
+                "url": "https://news.ycombinator.com/item?id=49686380",
+                "title": "Ask HN: What are you working on? (September 2026)"
+            },
+            {
+                "name": "HackerNews",
+                "url": "https://techcrunch.com/2026/09/12/automattic-confirms-mullenweg-has-returned-as-ceo-after-attempted-ouster-by-board/",
+                "title": "Mullenweg has returned as CEO after attempted board ouster"
+            }
+        ],
+        "tags": [
+            "fable",
+            "solves",
+            "cyphral",
+            "distich",
+            "370yearold"
+        ]
+    },
+    {
         "id": "tech-weekly-37-2026",
         "date": "2026-09-07",
         "title": {
