@@ -1,5 +1,71 @@
 [
     {
+        "id": "tech-weekly-43-2026",
+        "date": "2026-10-19",
+        "title": {
+            "es": "Tech Weekly #43: Someone behind the software",
+            "en": "Tech Weekly #43: Someone behind the software"
+        },
+        "category": {
+            "es": "Tecnologías",
+            "en": "Technologies"
+        },
+        "summary": {
+            "es": "Esta semana el mundo tecnológico trae novedades importantes en someone, behind, software. Destacamos 1 historia clave que están marcando tendencia en la industria.",
+            "en": "This week brings important tech news in someone, behind, software. We highlight 1 key story that are setting trends in the industry."
+        },
+        "content": {
+            "es": [
+                "El ecosistema tecnológico no se detiene. Cada semana surgen innovaciones, lanzamientos y descubrimientos que transforman la manera en que vivimos y trabajamos. En BlackGreenStudio te traemos un resumen con lo más relevante.",
+                "A continuación, las historias más destacadas de esta semana:",
+                "**Someone behind the software**",
+                "Fuente: [karrisaarinen.com](https://karrisaarinen.com/posts/someone-behind-the-software/)",
+                "En BlackGreenStudio seguimos de cerca estas tendencias para ofrecerte soluciones tecnológicas de vanguardia. ¡Mantente al tanto la próxima semana!"
+            ],
+            "en": [
+                "The tech ecosystem never stops. Every week brings innovations, launches, and discoveries that transform how we live and work. At BlackGreenStudio, we bring you a roundup of the most relevant news.",
+                "Below are the top stories of this week:",
+                "**Someone behind the software**",
+                "Source: [karrisaarinen.com](https://karrisaarinen.com/posts/someone-behind-the-software/)",
+                "At BlackGreenStudio we closely follow these trends to offer you cutting-edge technology solutions. Stay tuned for next week!"
+            ]
+        },
+        "image": "../Resource/blog/default-post.svg",
+        "verified": false,
+        "sources": [
+            {
+                "name": "HackerNews",
+                "url": "https://karrisaarinen.com/posts/someone-behind-the-software/",
+                "title": "Someone behind the software"
+            },
+            {
+                "name": "HackerNews",
+                "url": "https://lwn.net/Articles/1101143/",
+                "title": "Linux 7.3"
+            },
+            {
+                "name": "HackerNews",
+                "url": "https://www.youtube.com/watch?v=LKrwhjOI8Nc",
+                "title": "There's never been a better time to go into math (by: 3blue1brown) [video]"
+            },
+            {
+                "name": "HackerNews",
+                "url": "https://arxiv.org/abs/2610.18861",
+                "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text"
+            },
+            {
+                "name": "HackerNews",
+                "url": "https://github.com/VikOlliver/RepRapMicron/wiki",
+                "title": "RepRapMicron"
+            }
+        ],
+        "tags": [
+            "someone",
+            "behind",
+            "software"
+        ]
+    },
+    {
         "id": "tech-weekly-42-2026",
         "date": "2026-10-12",
         "title": {
