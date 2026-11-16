@@ -1,5 +1,71 @@
 [
     {
+        "id": "tech-weekly-47-2026",
+        "date": "2026-11-16",
+        "title": {
+            "es": "Tech Weekly #47: How to make almost anything",
+            "en": "Tech Weekly #47: How to make almost anything"
+        },
+        "category": {
+            "es": "Tecnologías",
+            "en": "Technologies"
+        },
+        "summary": {
+            "es": "Esta semana el mundo tecnológico trae novedades importantes en make, almost, anything. Destacamos 1 historia clave que están marcando tendencia en la industria.",
+            "en": "This week brings important tech news in make, almost, anything. We highlight 1 key story that are setting trends in the industry."
+        },
+        "content": {
+            "es": [
+                "El ecosistema tecnológico no se detiene. Cada semana surgen innovaciones, lanzamientos y descubrimientos que transforman la manera en que vivimos y trabajamos. En BlackGreenStudio te traemos un resumen con lo más relevante.",
+                "A continuación, las historias más destacadas de esta semana:",
+                "**How to make almost anything**",
+                "Fuente: [pub.cba.mit.edu](https://pub.cba.mit.edu/863.26/site/)",
+                "En BlackGreenStudio seguimos de cerca estas tendencias para ofrecerte soluciones tecnológicas de vanguardia. ¡Mantente al tanto la próxima semana!"
+            ],
+            "en": [
+                "The tech ecosystem never stops. Every week brings innovations, launches, and discoveries that transform how we live and work. At BlackGreenStudio, we bring you a roundup of the most relevant news.",
+                "Below are the top stories of this week:",
+                "**How to make almost anything**",
+                "Source: [pub.cba.mit.edu](https://pub.cba.mit.edu/863.26/site/)",
+                "At BlackGreenStudio we closely follow these trends to offer you cutting-edge technology solutions. Stay tuned for next week!"
+            ]
+        },
+        "image": "../Resource/blog/default-post.svg",
+        "verified": false,
+        "sources": [
+            {
+                "name": "HackerNews",
+                "url": "https://pub.cba.mit.edu/863.26/site/",
+                "title": "How to make almost anything"
+            },
+            {
+                "name": "HackerNews",
+                "url": "http://groundworkcollaborative.org/news/amazons-decoy-deals-groundwork-investigation-reveals-nearly-1-in-3-black-friday-and-cyber-monday-deals-advertised-by-amazon-offered-no-savings-to-shoppers-nearly-1-in-10-w/",
+                "title": "Many of Amazon’s Black Friday and Cyber Monday “deals” offered no savings"
+            },
+            {
+                "name": "HackerNews",
+                "url": "https://iter.ca/post/ubo-uxss/",
+                "title": "Universal XSS in uBlock Origin from website-driven element picker"
+            },
+            {
+                "name": "HackerNews",
+                "url": "https://jack.cab/blog/siterate",
+                "title": "What is w2rt6byl5nf1opmc-a.com?"
+            },
+            {
+                "name": "HackerNews",
+                "url": "https://masnick.com/posts/the-secret-thinkpad-powerbutton-code-to-bring-dead-laptops-back-to-life/",
+                "title": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)"
+            }
+        ],
+        "tags": [
+            "make",
+            "almost",
+            "anything"
+        ]
+    },
+    {
         "id": "tech-weekly-46-2026",
         "date": "2026-11-09",
         "title": {
@@ -599,76 +665,6 @@
             "cyphral",
             "distich",
             "370yearold"
-        ]
-    },
-    {
-        "id": "tech-weekly-37-2026",
-        "date": "2026-09-07",
-        "title": {
-            "es": "Tech Weekly #37: Nitter and XCancel resume service after legal advice",
-            "en": "Tech Weekly #37: Nitter and XCancel resume service after legal advice"
-        },
-        "category": {
-            "es": "Tecnologías",
-            "en": "Technologies"
-        },
-        "summary": {
-            "es": "Esta semana el mundo tecnológico trae novedades importantes en nitter, xcancel, resume. Destacamos 1 historia clave que están marcando tendencia en la industria.",
-            "en": "This week brings important tech news in nitter, xcancel, resume. We highlight 1 key story that are setting trends in the industry."
-        },
-        "content": {
-            "es": [
-                "El ecosistema tecnológico no se detiene. Cada semana surgen innovaciones, lanzamientos y descubrimientos que transforman la manera en que vivimos y trabajamos. En BlackGreenStudio te traemos un resumen con lo más relevante.",
-                "A continuación, las historias más destacadas de esta semana:",
-                "**Nitter and XCancel resume service after legal advice**",
-                "<a href=\"https:&#x2F;&#x2F;github.com&#x2F;zedeus&#x2F;nitter\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;zedeus&#x2F;nitter</a><p><a href=\"https:&#x2F;&#x2F;xcancel.com&#x2F;cdclegal\" rel=\"nofo...",
-                "Fuente: [github.com](https://github.com/zedeus/nitter/commit/1428b4c2b4246f92a7e5b2673438e5fb39fcc4a3)",
-                "En BlackGreenStudio seguimos de cerca estas tendencias para ofrecerte soluciones tecnológicas de vanguardia. ¡Mantente al tanto la próxima semana!"
-            ],
-            "en": [
-                "The tech ecosystem never stops. Every week brings innovations, launches, and discoveries that transform how we live and work. At BlackGreenStudio, we bring you a roundup of the most relevant news.",
-                "Below are the top stories of this week:",
-                "**Nitter and XCancel resume service after legal advice**",
-                "<a href=\"https:&#x2F;&#x2F;github.com&#x2F;zedeus&#x2F;nitter\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;zedeus&#x2F;nitter</a><p><a href=\"https:&#x2F;&#x2F;xcancel.com&#x2F;cdclegal\" rel=\"nofo...",
-                "Source: [github.com](https://github.com/zedeus/nitter/commit/1428b4c2b4246f92a7e5b2673438e5fb39fcc4a3)",
-                "At BlackGreenStudio we closely follow these trends to offer you cutting-edge technology solutions. Stay tuned for next week!"
-            ]
-        },
-        "image": "../Resource/blog/default-post.svg",
-        "verified": false,
-        "sources": [
-            {
-                "name": "HackerNews",
-                "url": "https://github.com/zedeus/nitter/commit/1428b4c2b4246f92a7e5b2673438e5fb39fcc4a3",
-                "title": "Nitter and XCancel resume service after legal advice"
-            },
-            {
-                "name": "HackerNews",
-                "url": "https://blog.archive.org/2026/09/01/keep-our-servers-running-your-recurring-donation-goes-3x-this-september/",
-                "title": "Keep Our Servers Running"
-            },
-            {
-                "name": "HackerNews",
-                "url": "https://www.notebookcheck.net/LG-smart-TVs-caught-logging-audio-with-screen-off-and-snooping-on-local-devices.1391214.0.html",
-                "title": "LG smart TVs caught logging audio with screen off and snooping on local devices"
-            },
-            {
-                "name": "HackerNews",
-                "url": "https://grapheneos.social/@GrapheneOS/117225539756835649",
-                "title": "GrapheneOS Overhauled Default Apps and Secure Clipboard"
-            },
-            {
-                "name": "HackerNews",
-                "url": "https://anubis.techaro.lol/blog/2026/anubis-wasm/",
-                "title": "It took a year to ship WebAssembly in Anubis"
-            }
-        ],
-        "tags": [
-            "nitter",
-            "xcancel",
-            "resume",
-            "service",
-            "legal"
         ]
     }
 ]
